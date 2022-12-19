@@ -52,6 +52,12 @@ As this is a brand new site with limited features, so the user stories were take
 * I would like to create code that is easy for others to follow.
 * I would like to create clean code that follows best practices.
 
+## Jest Testing
+
+To run tests in the terminal, type:
+
+`npm test`
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:

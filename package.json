@@ -1,0 +1,25 @@
+{
+  "name": "ci-milestone-project-2",
+  "version": "1.0.0",
+  "description": "This is a Code Institute student project for Milestone 2, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janet-dev/ci-milestone-project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janet-dev/ci-milestone-project-2/issues"
+  },
+  "homepage": "https://github.com/janet-dev/ci-milestone-project-2#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
