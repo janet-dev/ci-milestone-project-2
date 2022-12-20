@@ -3,6 +3,7 @@
 // game object
 let game = {
     score: 0,
+    level: 0,
 }
 
 

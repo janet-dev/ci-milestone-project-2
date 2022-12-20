@@ -20,9 +20,12 @@ beforeAll(() => {
     document.close();
 });
 
-//check for game score
+//check for game score and level
 describe("game object contains correct keys", () => {
     test("score key exists", () => {
         expect("score" in game).toBe(true);
+    });
+    test("level key exists", () => {
+        expect("level" in game).toBe(true);
     });
 });
