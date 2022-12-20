@@ -1,1 +1,55 @@
 /*Game styling*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
+
+html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-area {
+    height: 100vh;
+    width: 100%;
+}
+
+.city {
+    width: 100%;
+    height: 80%;
+    background: url("../images/gotham-all.jpg") no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+}
+
+.title-area {
+    width: 20%;
+    height: 10%;
+}
+
+.sprite {
+    background-image: url('../images/sprite.png');
+    position: absolute;
+    width: 4%;
+    height: 6%;
+    left: 40%;
+    bottom: 50%;
+}
+
+.ground {
+    background: url('../images/ground.png') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 80%;
+    z-index: +1;
+}
