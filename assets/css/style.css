@@ -1,42 +1,17 @@
 /*Game styling*/
 
+:root {
+    /* default font size in browsers is 16px = 1em, 
+    but is easier to if 10px is base size.
+    So 10px/16px = 0.625 = 1rem for root element.
+    1rem is now 10px*/
+    font-size: 0.625em;
+  }
+
 body {
-    display: flex;
-    justify-content: center;
-}
-
-.game-area {
-    width: 280px;
-    height: 560px;
-    position: absolute;
-}
-
-.city {
-    width: 280px;
-    height: 460px;
-    background: url("../images/gotham-2-280x460.jpg") no-repeat;
-    position: absolute;
-}
-
-.title-area {
-    margin-left: 5px;
-    font-size: 10pt;
-}
-
-.sprite {
-    background-image: url('../images/sprite.png');
-    position: absolute;
-    width: 60px;
-    height: 45px;
-    left: 20%;
-    bottom: 50%;
-}
-
-.ground {
-    background: url('../images/ground-280x100.jpg') no-repeat;
-    width: 280px;
-    height: 100px;
-    position: absolute;
-    top: 460px;
-    z-index: +1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
 }

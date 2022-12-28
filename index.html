@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2D JS Game</title>
+    <title>⬛Box Hunt</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/scripts/app.js" charset="utf-8"></script>
 </head>
 <body>
-    <div class="game-area">
-        <div class="city">
-            <div class="title-area">
-                <h3 class="title">Flappy Game</h3>
-                <p class="game-info">
-                    Level: <span id="level">0</span><br>
-                    Score: <span id="score">0</span>
-                </p>
-            </div>
-            <div class="sprite"></div>
-        </div>
-        <div class="ground"></div>
+    <h1>Box Hunt</h1>
+
+    <h2>Score: <span id="score">0</span></h2>
+    <h2>Time left: <span id="time-left">60</span> s</h2>
+
+    <div class="grid">
+        <!-- JavaScript will create the 3x3 grid with 9 tiles:
+        <div class="tile" id="1"></div>
+        <div class="tile" id="2"></div>
+        <div class="tile" id="3"></div>
+        <div class="tile" id="4"></div>
+        <div class="tile" id="5"></div>
+        <div class="tile" id="6"></div>
+        <div class="tile" id="7"></div>
+        <div class="tile" id="8"></div>
+        <div class="tile" id="9"></div>   
+        -->
     </div>
+
+    <div class="buttons">
+        <button id="start-game">Start</button>
+        <button id="reset-game">Reset</button>
+    </div>
+
+    <h2>Instructions</h2>
+
+    <h2>Email Us</h2>
+
+    <script src="assets/scripts/app.js" charset="utf-8"></script>
 </body>
 </html>

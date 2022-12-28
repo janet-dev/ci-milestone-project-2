@@ -1,4 +1,6 @@
-// JS 2D Flappy Game
+// 2D Retro Game - Box Hunt
+// Inspired by the 'Whac-A-Mole' game by Ania Kubow
+//
 
 // game object
 let game = {

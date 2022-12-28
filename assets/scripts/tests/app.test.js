@@ -11,7 +11,7 @@ So we're going to catch it when an alert happens  and divert it harmlessly into 
 */
 jest.spyOn(window, "alert").mockImplementation(() => { });
 
-// Flappy Game
+// Retro Game
 beforeAll(() => {
     let fs = require("fs");
     let fileContents = fs.readFileSync("index.html", "utf-8");
