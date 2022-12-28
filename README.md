@@ -25,7 +25,7 @@ The site also enhances the owner's goals by:
 * This project is deployed via GitHub Pages and the code in a GitHub repository.
 
 
-<h1 align="center">Flappy Fantom</h1>
+<h1 align="center">2D Retro Game: Box Hunt</h1>
 
 [View the live project here.](https://janet-dev.github.io/ci-milestone-project-2/)
 
