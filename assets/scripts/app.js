@@ -75,6 +75,17 @@ function isTargetHit() {
     });
 }
 
+// reset game when Reset button is clicked/touched
+function resetGame() {
+    reset.onclick = () => {
+        clearInterval(countDownTimer);
+        clearInterval(randomTargetTimer);
+        scoreDisplayed.textContent = 0;
+        timeLeft.textContent = 60;
+    }     
+}
+resetGame();
+
 function startGame() {
     // start game when Start button is clicked/touched
     start.onclick = () => {
