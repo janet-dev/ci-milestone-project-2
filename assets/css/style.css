@@ -36,6 +36,10 @@ body {
   border: solid #ffffff 0.1rem;
 }
 
+.target {
+  background-color: #ff00ff; 
+}
+
 .buttons {
   padding-top: 0.5rem;
 }
