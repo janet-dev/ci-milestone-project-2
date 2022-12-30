@@ -31,3 +31,7 @@ body {
   background-color: #000000;
   border: solid #ffffff 0.1rem;
 }
+
+.buttons {
+  padding-top: 0.5rem;
+}
