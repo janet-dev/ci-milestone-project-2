@@ -16,6 +16,9 @@ const target = document.querySelector('.target');
 const timeLeft = document.querySelector('#time-left');
 const scoreDisplayed = document.querySelector('#score');
 
+const start = document.querySelector('#start-game');
+const reset = document.querySelector('#reset-game');
+
 // game variables
 let hitPosition;
 let randomTargetTimer;
@@ -45,6 +48,21 @@ function randomTarget() {
     randomTile.classList.add('target');
     hitPosition = randomTile.id;
 }
+randomTargetTimer = setInterval(randomTarget, 1000);
+
+// countdown timer and check if game is over
+function countDown() {
+    game.timePeriod--  //decrement
+    timeLeft.textContent = game.timePeriod;
+
+    if (game.timePeriod == 0) {
+        clearInterval(countDownTimer);
+        clearInterval(randomTargetTimer);
+        //end game
+        gameOver();
+    }
+}
+countDownTimer = setInterval(countDown, 1000); // every 1 sec
 
 // check if random target has been clicked or touched
 function isTargetHit() {
@@ -58,7 +76,9 @@ function isTargetHit() {
         });
     });
 }
-randomTargetTimer = setInterval(randomTarget, 1000);
+isTargetHit();
+
+
 
 
 // END of file - place module exports here
