@@ -45,7 +45,21 @@ function randomTarget() {
     randomTile.classList.add('target');
     hitPosition = randomTile.id;
 }
-randomTarget();
+
+// check if random target has been clicked or touched
+function isTargetHit() {
+    tiles.forEach(tile => {
+        tile.addEventListener('click', () => {
+            // 'click' for mouse click or touch on touchscreen
+            if (tile.id == hitPosition) {
+                game.score++;
+                hitPosition = null;
+            } // if you hit the pink box
+        });
+    });
+}
+randomTargetTimer = setInterval(randomTarget, 1000);
+
 
 // END of file - place module exports here
 // remember to import these into app.test.js
