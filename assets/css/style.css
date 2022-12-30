@@ -16,6 +16,10 @@ body {
     color: #000000;
 }
 
+#time-left {
+  color: #ff0000;
+}
+
 .grid {
   margin: auto;
   /*allow 0.1rem for borders - see .squares*/
