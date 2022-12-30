@@ -98,6 +98,15 @@ function startGame() {
 }
 startGame();
 
+function gameOver() {    
+    // create the text 'Game Over'
+    const gameOverText = document.querySelector('#game-over');
+    const gameOverDisplay = document.createElement('span');
+    gameOverDisplay.textContent = "Game Over!";
+    gameOverDisplay.style.color = 'red';
+    gameOverText.appendChild(gameOverDisplay);
+}
+
 
 // END of file - place module exports here
 // remember to import these into app.test.js
