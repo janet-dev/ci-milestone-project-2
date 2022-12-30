@@ -12,9 +12,14 @@ let game = {
 
 // get the game elements with their classes and ids
 const grid = document.querySelector('.grid');
-
+const target = document.querySelector('.target');
 const timeLeft = document.querySelector('#time-left');
 const scoreDisplayed = document.querySelector('#score');
+
+// game variables
+let hitPosition;
+let randomTargetTimer;
+let countDownTimer;
 
 // create the game grid
 function createGrid() {
@@ -31,6 +36,10 @@ const tiles = document.querySelectorAll('.tile'); // select all elements with cl
 
 // generate random target tile
 function randomTarget() {
+    // get each tile (0-8) and remove the class .target
+    tiles.forEach(tile => {
+        tile.classList.remove('target');
+    });
     let randomNumber = Math.floor(Math.random() * 9) //0-8
     let randomTile = tiles[randomNumber];
     randomTile.classList.add('target');
