@@ -29,6 +29,14 @@ function createGrid() {
 createGrid();
 const tiles = document.querySelectorAll('.tile'); // select all elements with class .tile
 
+// generate random target tile
+function randomTarget() {
+    let randomNumber = Math.floor(Math.random() * 9) //0-8
+    let randomTile = tiles[randomNumber];
+    randomTile.classList.add('target');
+    hitPosition = randomTile.id;
+}
+randomTarget();
 
 // END of file - place module exports here
 // remember to import these into app.test.js
