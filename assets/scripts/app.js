@@ -1,6 +1,6 @@
 // 2D Retro Game - Box Hunt
 // Inspired by the 'Whac-A-Mole' game by Ania Kubow
-//
+// https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/
 
 // game object
 let game = {
@@ -48,7 +48,6 @@ function randomTarget() {
     randomTile.classList.add('target');
     hitPosition = randomTile.id;
 }
-randomTargetTimer = setInterval(randomTarget, 1000);
 
 // countdown timer and check if game is over
 function countDown() {
@@ -62,7 +61,6 @@ function countDown() {
         gameOver();
     }
 }
-countDownTimer = setInterval(countDown, 1000); // every 1 sec
 
 // check if random target has been clicked or touched
 function isTargetHit() {
@@ -76,9 +74,18 @@ function isTargetHit() {
         });
     });
 }
-isTargetHit();
 
-
+function startGame() {
+    // start game when Start button is clicked/touched
+    start.onclick = () => {
+        game.score = 0;
+        game.timePeriod = 60;
+        isTargetHit();
+        randomTargetTimer = setInterval(randomTarget, 1000); //every 1.0 sec for Level-1
+        countDownTimer = setInterval(countDown, 1000); // every 1 sec
+    }
+}
+startGame();
 
 
 // END of file - place module exports here
