@@ -27,10 +27,11 @@ body {
 .grid {
   margin: auto;
   /*allow 0.1rem for borders - see .squares*/
-  width: 31.6rem;
+  width: 30.6rem;
   height: 30.6rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tile {
