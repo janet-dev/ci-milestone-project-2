@@ -27,7 +27,7 @@ body {
 .grid {
   margin: auto;
   /*allow 0.1rem for borders - see .squares*/
-  width: 30.6rem;
+  width: 31.6rem;
   height: 30.6rem;
   display: flex;
   flex-wrap: wrap;
@@ -46,4 +46,10 @@ body {
 
 .buttons {
   padding-top: 0.5rem;
+}
+
+@media all and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
 }
