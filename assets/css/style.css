@@ -26,8 +26,8 @@ body {
 
 .grid {
   margin: auto;
-  /*allow 0.1rem for borders - see .squares*/
-  width: 30.6rem;
+  /*allow for borders - see .squares*/
+  width: 31.6rem;
   height: 30.6rem;
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +49,7 @@ body {
   padding-top: 0.5rem;
 }
 
+/*Change font size for smaller devices*/
 @media all and (max-width: 600px) {
   html {
     font-size: 8px;
