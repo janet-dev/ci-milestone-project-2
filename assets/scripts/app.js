@@ -69,6 +69,7 @@ function isTargetHit() {
             // 'click' for mouse click or touch on touchscreen
             if (tile.id == hitPosition) {
                 game.score++;
+                scoreDisplayed.textContent = game.score;
                 hitPosition = null;
             } // if you hit the pink box
         });
