@@ -1,11 +1,15 @@
 /*Game styling*/
 
-:root {
-    /* default font size in browsers is 16px = 1em, 
+html {
+    /* 
+    Default font size in browsers is 16px = 1em, 
     but is easier to if 10px is base size.
     So 10px/16px = 0.625 = 1rem for root element.
-    1rem is now 10px*/
-    font-size: 0.625em;
+    1rem is now 10px
+    But font-size should be in %
+    https://dev.to/swastikyadav/convert-px-to-rem-an-effective-workflow-4m4j
+    */
+    font-size: 62.5%;
   }
 
 body {

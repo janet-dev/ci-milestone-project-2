@@ -135,6 +135,8 @@ Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-her
 
 ### Media
 
+[Whac-A-Mole](https://en.wikipedia.org/wiki/Whac-A-Mole) by Wikipedia
+
 Girl playing Whac-A-Mole by [sa_ku_ra / sakura](https://www.flickr.com/photos/sa_ku_ra/18984918/) on Flickr
 - Attribution 2.0 Generic [(CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/)
 
@@ -145,8 +147,7 @@ Many of the references have been embedded as links throughout this document and 
 
 [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by Ania Kubow on freeCodeCamp
 
-[Whac-A-Mole](https://en.wikipedia.org/wiki/Whac-A-Mole) by Wikipedia
-
+[Convert px to rem - An effective workflow](https://dev.to/swastikyadav/convert-px-to-rem-an-effective-workflow-4m4j) by Swastik Yadav on DEV Community
 
 ## Acknowledgements
 
