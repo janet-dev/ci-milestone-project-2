@@ -13,30 +13,34 @@ html {
   }
 
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    color: #000000;
+  display: block;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
 }
 
 #time-left {
   color: #ff0000;
 }
 
+/* .grid and .tile dimensions chosen to match smallest device in developer tools
+- the Galaxy Fold. From here larger screens will scale up as per the media queries below*/
 .grid {
   margin: auto;
   /*allow for borders - see .squares*/
-  width: 31.6rem;
-  height: 30.6rem;
+  width: 22rem;
+  height: 22rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .tile {
-  height: 10rem;
-  width: 10rem;
+  height: 7rem;
+  width: 7rem;
   background-color: #000000;
   border: solid #ffffff 0.1rem;
 }
@@ -49,9 +53,21 @@ body {
   padding-top: 0.5rem;
 }
 
-/*Change font size for smaller devices*/
-@media all and (max-width: 600px) {
+
+/* Typical Device Breakpoints - W3 Schools
+https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   html {
-    font-size: 8px;
-  }
+      font-size: 12px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+  font-size: 18px;
+}
 }
