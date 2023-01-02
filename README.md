@@ -52,11 +52,50 @@ As this is a brand new site with limited features, so the user stories were take
 * I would like to create code that is easy for others to follow.
 * I would like to create clean code that follows best practices.
 
-## Jest Testing
+### Design
+* Colour Scheme
+    - Colours white (#ffffff) and black (#000000) are used for the game grid.
+    - Bright colours for the moving tile.
 
-To run tests in the terminal, type:
+	This colour scheme was chosen for simplicity, readability and to give a retro feel. Too much colour can make the site to busy or distracting.
 
-`npm test`
+* Typography
+    - For the home and about pages, [Raleway font](https://fonts.google.com/specimen/Raleway) is used for good readability and contrast when required. It is considered to be number eight in the [The 10 Best Google Fonts in 2023](https://kinsta.com/blog/best-google-fonts/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
+
+
+### Wireframes
+See the site design as a [wireframe PDF](docs/ux/wireframe.pdf). It includes both desktop and mobile versions.
+
+## Features
+This website will initially consist of three visible pages (Home, Courses, About) and one hidden (Confirmation for subscription)
+
+## Future Features
+After asking the advice of other gamers, further features are required:
+* feature 1
+
+## Technology Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
+* Wireframes from [Balsamiq](https://balsamiq.com/).
+* Developer platform from [Gitpod](https://www.gitpod.io/).
+* IDE integrated into Gitpod from [Visual Studio Code](https://code.visualstudio.com/).
+* Debugging assisted by [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/).
+* Version control integrated into Gitpod from [Git](https://git-scm.com/).
+* Project deployment provided by [GitHub Pages](https://pages.github.com/).
+* Automated testing provided by [Jest](https://jestjs.io/).
+* HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
+* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
+* Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
+* Roboto font from [Google Fonts](https://fonts.google.com/).
+* Favicon from [favicon.cc](https://www.favicon.cc/).
+* Online photo editor from [Pixlr](https://pixlr.com/x/).
+* Stock photos from [Unsplash](https://unsplash.com).
+* Paint from [Microsoft](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)
+* Snip and Sketch from [Microsoft](https://apps.microsoft.com/store/detail/snipping-tool/9MZ95KL8MR0L?hl=en-gb&gl=gb)
+* PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
+
+## Testing
+
+See the document [TESTING.md](TESTING.md) for the automated amd manual tests.
 
 ## Deployment
 
