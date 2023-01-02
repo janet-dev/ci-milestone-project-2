@@ -50,7 +50,7 @@ body {
 }
 
 .buttons {
-  padding-top: 0.5rem;
+  padding-top: 0.1rem;
 }
 
 
@@ -68,6 +68,6 @@ https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   html {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 }
