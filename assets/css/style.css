@@ -22,6 +22,10 @@ body {
   color: #000000;
 }
 
+#score {
+  color: #0000ff;
+}
+
 #time-left {
   color: #ff0000;
 }
