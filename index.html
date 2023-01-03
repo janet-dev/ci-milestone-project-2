@@ -7,18 +7,17 @@
     <title>Box Hunt</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- self invoking function - so disable for now!
+    
+    <!-- EmailJS -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
         (function(){
             emailjs.init("QaZlE9csUadOLmKm2");
-            emailjs.send("service_lo01bwk","game-suggestion-template",{from_name: "Fred",
-message: "I want game features...",},"QaZlE9csUadOLmKm2");
         })();
     </script>
-    -->
+   
 </head>
 <body>
     <h1>Box Hunt</h1>
@@ -43,8 +42,9 @@ message: "I want game features...",},"QaZlE9csUadOLmKm2");
     <h2>Instructions</h2>
 
     <h2>Email Us</h2>
-    <h2 class="contact-heading">Submit your ideas!</h2>   
-    <form>
+    <h2 class="contact-heading">Submit your ideas!</h2> 
+
+    <form onsubmit="return sendMail(this);">
         <input type="text" name="name" id="fullname" placeholder="Full Name" required>
         <input type="email" name="email" id="emailaddress" placeholder="Email" required>
         <textarea rows="5" name="gameidea" id="gameidea" placeholder="Game idea" required></textarea>
@@ -52,5 +52,7 @@ message: "I want game features...",},"QaZlE9csUadOLmKm2");
     </form>                
 
     <script src="assets/scripts/app.js" charset="utf-8"></script>
+    <script src="assets/scripts/sendEmail.js"></script>
+
 </body>
 </html>
