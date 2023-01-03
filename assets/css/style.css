@@ -53,8 +53,38 @@ body {
   background-color: #ff00ff; 
 }
 
-.buttons {
+.buttons-div {
   padding-top: 1rem;
+}
+
+/*------------------------------------Contact form*/
+
+.contact-heading {
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 21rem;
+}
+
+button, input, textarea {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-family: "Raleway", sans-serif;
+
+}
+
+button[type="submit"] {
+  width: 15rem;
+  margin: auto;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 
