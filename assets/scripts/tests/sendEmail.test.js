@@ -2,8 +2,6 @@
  * @jest-environment jsdom
  */
 
-const { game } = require("../sendEmail"); // sendEmail.js file
-
 /*
 Jest Spy to check if alert has been called.
 First argument to spyOn is the window and  the second is the name of the method, in this case "alert".
@@ -20,12 +18,3 @@ beforeAll(() => {
     document.close();
 });
 
-//check for game score and level
-describe("game object contains correct keys", () => {
-    test("score key exists", () => {
-        expect("score" in game).toBe(true);
-    });
-    test("level key exists", () => {
-        expect("level" in game).toBe(true);
-    });
-});

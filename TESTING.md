@@ -4,9 +4,9 @@
 - [Jest](https://jestjs.io/) is a delightful JavaScript Testing Framework with a focus on simplicity. 
 - Jest aims to work out of the box, config free, on most JavaScript projects.
 
-To run tests in the terminal, type:
+To run tests in the terminal, type (without the `.test.js` extension):
 
-`npm test`
+`npm test -- testname`
 
 ## Manual Testing
 
