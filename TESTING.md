@@ -6,7 +6,7 @@
 
 To run tests in the terminal, type (without the `.test.js` extension):
 
-`npm test -- testname`
+`npm test -- filename`
 
 ## Manual Testing
 

@@ -111,4 +111,4 @@ function gameOver() {
 
 // END of file - place module exports here
 // remember to import these into app.test.js
-module.exports = { game };
+//module.exports = { game };
