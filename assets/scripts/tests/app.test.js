@@ -21,11 +21,23 @@ beforeAll(() => {
 });
 
 //check for game score and level
-describe("game object contains correct keys", () => {
+describe("game object contains correct keys and default values", () => {
     test("score key exists", () => {
         expect("score" in game).toBe(true);
     });
-    test("level key exists", () => {
-        expect("level" in game).toBe(true);
+    test("number of tiles key exists", () => {
+        expect("numberOfTiles" in game).toBe(true);
+    });
+    test("time period key exists", () => {
+        expect("timePeriod" in game).toBe(true);
+    });
+    test("score key exists", () => {
+        expect(game.score).toEqual(0);
+    });
+    test("number of tiles key exists", () => {
+        expect(game.numberOfTiles).toEqual(9);
+    });
+    test("time period key exists", () => {
+        expect(game.timePeriod).toEqual(60);
     });
 });

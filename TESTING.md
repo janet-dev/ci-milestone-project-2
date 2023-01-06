@@ -60,3 +60,25 @@ index.html
 
 - [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-index-desktop-2.pdf)
 - [Mobile PDF report](docs/testing/lighthouse-reports/lighthouse-index-mobile-2.pdf)
+
+
+
+## Credits
+
+A huge thank you to the following people and organisations, because without you, the project would not have been produced in it's present form.
+
+### From the Course
+
+Jest Testing Walkthrough Tutorials from [Code Institute](https://github.com/Code-Institute-Solutions/Jest_Testing_Part2/blob/main/09_Final_Codealong_2/scripts/tests/game.test.js)
+
+Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)
+
+### Code
+Although the code is the work of the author, some of the code has been sourced from or inspired by others.
+
+[Jest Docs](https://jestjs.io/docs/getting-started)
+
+[How to ignore lines for code coverage in Jest](https://stackoverflow.com/questions/38740165/how-to-ignore-lines-for-code-coverage-in-jest) on Stack Overflow
+
+[Jest](https://www.w3resource.com/jest/introduction.php) from w3resource
+

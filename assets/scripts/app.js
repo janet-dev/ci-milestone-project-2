@@ -5,10 +5,10 @@
 // game object
 let game = {
     score: 0,
-    level: 0,
     numberOfTiles: 9,
     timePeriod: 60,
 };
+/* istanbul ignore next */
 
 // get the game elements with their classes and ids
 const grid = document.querySelector('.grid');
@@ -108,7 +108,6 @@ function gameOver() {
     gameOverText.appendChild(gameOverDisplay);
 }
 
-
 // END of file - place module exports here
 // remember to import these into app.test.js
-//module.exports = { game };
+module.exports = { game };
