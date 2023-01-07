@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timePeriod: 60,
     };
 
-    // get the game elements with their classes and ids
-    const grid = document.querySelector('.grid');
+    const grid = document.querySelector('.grid'); // get the game elements with their classes and ids
     // const target = document.querySelector('.target');
     const timeLeft = document.querySelector('#time-left');
     const scoreDisplayed = document.querySelector('#score');
@@ -112,9 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
         gameOverDisplay.style.color = 'red';
         gameOverText.appendChild(gameOverDisplay);
     }
-
-}) 
-
 // END of file - place module exports here
 // remember to import these into app.test.js
 module.exports = { game, createGrid };
+
+}) 
+

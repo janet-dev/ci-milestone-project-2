@@ -1,8 +1,9 @@
 /**
  * @jest-environment jsdom
  */
+//const { game, createGrid } = require("../app"); // app.js file
+let game;
 let createGrid;
-const { game } = require("../app"); // app.js file
 
 /*
 Jest Spy to check if alert has been called.
@@ -21,38 +22,36 @@ beforeAll(() => {
     document.open();
     document.write(fileContents);
     document.close();
-    createGrid = require("../app"); // app.js file
+    game = require("../app");
+    createGrid = require("../app");
 });
 
-
-
-//check game object
-describe("game object contains correct keys and default values", () => {
-    test("score key exists", () => {
-        expect("score" in game).toBe(true);
+describe("score and time left have default values", () => {
+    test("score text content is '000'", () => {
+        const score = document.querySelector("#score");
+        expect(score.textContent).toEqual("000");
     });
-    test("number of tiles key exists", () => {
-        expect("numberOfTiles" in game).toBe(true);
-    });
-    test("time period key exists", () => {
-        expect("timePeriod" in game).toBe(true);
-    });
-    test("score key exists", () => {
-        expect(game.score).toEqual(0);
-    });
-    test("number of tiles key exists", () => {
-        expect(game.numberOfTiles).toEqual(9);
-    });
-    test("time period key exists", () => {
-        expect(game.timePeriod).toEqual(60);
+    test("time left text content is '60'", () => {
+        const time = document.querySelector("#time-left");
+        expect(time.textContent).toEqual("60");
     });
 });
 
-
-// check grid is created correctly
-describe("createGrid works correctly", () => {
-    beforeAll(() => {
-        createGrid();
+describe("grid has been built", () => {
+    const squares = document.getElementsByClassName("tile");
+    test("grid has 9 tiles", () => {
+        expect(squares.length).toEqual(9);
     });
-    
+    test("tiles have id=0 to 8", () => {
+        expect(squares[0].id).toEqual('0');
+        expect(squares[1].id).toEqual('1');
+        expect(squares[2].id).toEqual('2');
+        expect(squares[3].id).toEqual('3');
+        expect(squares[4].id).toEqual('4');
+        expect(squares[5].id).toEqual('5');
+        expect(squares[6].id).toEqual('6');
+        expect(squares[7].id).toEqual('7');
+        expect(squares[8].id).toEqual('8');
+        //expect(squares[9].id).toEqual('9');
+    });           
 });
