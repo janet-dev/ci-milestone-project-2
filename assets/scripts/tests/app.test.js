@@ -4,7 +4,9 @@
 
 // ARE YOU STRUGGLING WITH NULL VALUES IN JEST?
 // https://code-institute-room.slack.com/archives/C7HD37Q1F/p1650618994260909
-let game, createGrid, startGame;
+let game; 
+let createGrid; 
+let startGame;
 
 /*
 Jest Spy to check if alert has been called.
