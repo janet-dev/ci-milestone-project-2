@@ -84,8 +84,9 @@ After asking the advice of other gamers, further features are required:
 * Automated testing provided by [Jest](https://jestjs.io/).
 * HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
 * CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
+* JavaScript validation from [JSHint](https://jshint.com/)
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
-* Roboto font from [Google Fonts](https://fonts.google.com/).
+* Raleway font from [Google Fonts](https://fonts.google.com/?query=raleway).
 * Favicon created on [favicon.cc](https://www.favicon.cc/).
 * Online photo editor from [Pixlr](https://pixlr.com/x/).
 * Stock photos from [Unsplash](https://unsplash.com).
