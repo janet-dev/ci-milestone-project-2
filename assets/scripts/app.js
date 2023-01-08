@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     createGrid();
     const tiles = document.querySelectorAll('.tile'); // select all elements with class .tile
 
-    // generate random target tile
+    
     function randomTarget() {
+        // generate random target tile
         // get each tile (0-8) and remove the class .target
         tiles.forEach(tile => {
             tile.classList.remove('target');
@@ -53,8 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         hitPosition = randomTile.id;
     }
 
-    // countdown timer and check if game is over
+
     function countDown() {
+        // countdown timer and check if game is over
         game.timePeriod--  //decrement
         timeLeft.textContent = game.timePeriod;
 
@@ -65,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
             gameOver();
         }
     }
-
-    // check if random target has been clicked or touched
+    
     function isTargetHit() {
+        // check if random target has been clicked or touched
         tiles.forEach(tile => {
             tile.addEventListener('click', () => {
                 // 'click' for mouse click or touch on touchscreen
@@ -79,9 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // reset game when Reset button is clicked/touched
+   
     function resetGame() {
+        // reset game when Reset button is clicked/touched
         reset.onclick = () => {
             clearInterval(countDownTimer);
             clearInterval(randomTargetTimer);
@@ -111,9 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
         gameOverDisplay.style.color = 'red';
         gameOverText.appendChild(gameOverDisplay);
     }
-// END of file - place module exports here
-// remember to import these into app.test.js
-module.exports = { game, createGrid };
+
+    // END of file - place module exports here
+    // remember to import these into app.test.js
+    module.exports = { game, createGrid, startGame };
 
 }) 
 
