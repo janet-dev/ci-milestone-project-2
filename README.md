@@ -29,7 +29,7 @@ The site also enhances the owner's goals by:
 
 [View the live project here.](https://janet-dev.github.io/ci-milestone-project-2/)
 
-The aim of the project is provide an easy to play game for most ages and to provide a non-taxing escape from daily stress. This game is based on the popular 2D retro version of Whack-A-Mole.
+The aim of the project is provide an easy to play game for most ages and to provide a non-taxing escape from daily stress. This game is based on the popular arcade and 2D retro versions of Whac-A-Mole.
 
 The site is designed to be responsive and accessible on a range of devices, making it easy to use for potential users.
 
@@ -86,7 +86,7 @@ After asking the advice of other gamers, further features are required:
 * CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
 * Roboto font from [Google Fonts](https://fonts.google.com/).
-* Favicon from [favicon.cc](https://www.favicon.cc/).
+* Favicon created on [favicon.cc](https://www.favicon.cc/).
 * Online photo editor from [Pixlr](https://pixlr.com/x/).
 * Stock photos from [Unsplash](https://unsplash.com).
 * Paint from [Microsoft](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)
@@ -185,6 +185,8 @@ Although the code is the work of the author, some of the code has been sourced f
 Many of the references have been embedded as links throughout this document and indicated by the active blue text links.
 
 [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by Ania Kubow on freeCodeCamp
+
+[Build your own CANDY CRUSH using JavaScript, HTML and CSS](https://www.youtube.com/watch?v=XD5sZWxwJUk) by Ania Kubow on YouTube
 
 [Convert px to rem - An effective workflow](https://dev.to/swastikyadav/convert-px-to-rem-an-effective-workflow-4m4j) by Swastik Yadav on DEV Community
 

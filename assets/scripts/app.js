@@ -1,10 +1,9 @@
 // 2D Retro Game - Box Hunt
-// Inspired by the 'Whac-A-Mole' game by Ania Kubow
-// https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/
+// Some code sourced from 'Whac-A-Mole' game by Ania Kubow
 
 // DOM event listener - all HTML elements to be read before loading JS file
-// makes sure events happen in order
-// Had issues with Jest testing as DOM hadnt loaded
+// makes sure events happen in order, because I 
+// had issues with Jest testing as DOM hadn't loaded
 document.addEventListener('DOMContentLoaded', () => {
 
     // game object
@@ -28,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let countDownTimer;
 
     function createGrid() {
+        //Build your own CANDY CRUSH using JavaScript, HTML and CSS | Ania Kubow
         // create the game grid
         for (let n = 0; n < game.numberOfTiles; n++) {
             // create the <div> tag for each tile
@@ -37,11 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(tile);
         }
     }
-
     createGrid();
     const tiles = document.querySelectorAll('.tile'); // select all elements with class .tile
 
-    
     function randomTarget() {
         // generate random target tile
         // get each tile (0-8) and remove the class .target
@@ -53,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         randomTile.classList.add('target');
         hitPosition = randomTile.id;
     }
-
 
     function countDown() {
         // countdown timer and check if game is over

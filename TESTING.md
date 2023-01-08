@@ -82,3 +82,6 @@ Although the code is the work of the author, some of the code has been sourced f
 
 [Jest](https://www.w3resource.com/jest/introduction.php) from w3resource
 
+[ARE YOU STRUGGLING WITH NULL VALUES IN JEST?](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1650618994260909) on Code Institute Slack Channel project-milestone-2 by Benjamin Kavanagh
+
+[Use Jest write unit testing for DOM manipulation](https://dev.to/ms314006/use-jest-write-unit-testing-for-dom-manipulation-3n6c) by Clark on Dev.to

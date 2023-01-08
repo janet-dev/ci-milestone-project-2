@@ -3,7 +3,7 @@
  */
 
 // ARE YOU STRUGGLING WITH NULL VALUES IN JEST?
-// https://code-institute-room.slack.com/archives/C7HD37Q1F/p1650618994260909
+// Code Institute Slack Channel project-milestone-2 by Benjamin Kavanagh
 let game; 
 let createGrid; 
 let startGame;
@@ -58,7 +58,6 @@ describe("grid has been built", () => {
 
 describe("check initial HTML when Start button ONLY is clicked", () => {
     //Use Jest write unit testing for DOM manipulation by Clark on Dev.to
-    //https://dev.to/ms314006/use-jest-write-unit-testing-for-dom-manipulation-3n6c
     test("should set score to 000 and time left to 60", () => {
         document.body.innerHTML = `
         <h2 class="full-width">Score: <span id="score">000</span> Time left: <span id="time-left">60</span>s</h2>
