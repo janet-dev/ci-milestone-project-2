@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             game.score = 0;
             game.timePeriod = 60;
             isTargetHit();
-            randomTargetTimer = setInterval(randomTarget, 1000); //every 1.0 sec for Level-1
+            randomTargetTimer = setInterval(randomTarget, 700); //every 0.7 sec
             countDownTimer = setInterval(countDown, 1000); // every 1 sec
         }
     }
