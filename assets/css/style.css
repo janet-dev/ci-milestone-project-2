@@ -87,6 +87,44 @@ button[type="submit"] {
   margin-bottom: 1rem;
 }
 
+/*------------------------------------404 page*/
+.display-404 {
+  text-shadow: 1px 1px #212529;
+  font-size: 48px;
+}
+
+.lead-404 {
+  font-weight: 400;
+  text-shadow: 1px 1px #212529;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/page-404.jpg") no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: larger;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000066;
+}
+
+.home-container {
+  min-height: 100vh;
+  height: auto;
+}
+
 /* Device Breakpoints
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
