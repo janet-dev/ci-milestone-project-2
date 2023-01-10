@@ -193,6 +193,10 @@ Many of the references have been embedded as links throughout this document and 
 
 [Typical Device Breakpoints](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp) from W3 Schools
 
+[Creating a custom 404 page for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) by GitHub Docs
+
+[Custom redirects are not supported](https://til.simonwillison.net/github/github-pages) by Simon Willison
+
 ## Acknowledgements
 
 Rohit Sharma - [Code Institute](https://codeinstitute.net/) Mentor, for the continuous feedback and guidance in industry standards.
