@@ -33,7 +33,7 @@ The aim of the project is provide an easy to play game for most ages and to prov
 
 The site is designed to be responsive and accessible on a range of devices, making it easy to use for potential users.
 
-<h2 align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Whackamole.jpg/1280px-Whackamole.jpg"></h2>
+<h2 align="center"><img src="docs/pictures/whacamole.jpg"></h2>
 
 ## User Experience (UX)
 
@@ -179,6 +179,8 @@ Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-her
 
 Girl playing Whac-A-Mole by [sa_ku_ra / sakura](https://www.flickr.com/photos/sa_ku_ra/18984918/) on Flickr
 - Attribution 2.0 Generic [(CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/)
+
+Wallpaper for 404 page from [Maxim Berg](https://unsplash.com/@maxberg) on Unsplash
 
 ### Code
 Although the code is the work of the author, some of the code has been sourced from or inspired by others.
