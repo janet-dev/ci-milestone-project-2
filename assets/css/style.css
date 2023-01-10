@@ -111,20 +111,6 @@ button[type="submit"] {
   font-size: larger;
 }
 
-.opaque-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #00000066;
-}
-
-.home-container {
-  min-height: 100vh;
-  height: auto;
-}
-
 /* Device Breakpoints
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
