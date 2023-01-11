@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
         score: 0,
         numberOfTiles: 9,
         timePeriod: 60,
+        countDownPeriod: 1000,
+        startPeriod: 1000
     };
 
     const grid = document.querySelector('.grid'); // get the game elements with their classes and ids
-    // const target = document.querySelector('.target');
     const timeLeft = document.querySelector('#time-left');
     const scoreDisplayed = document.querySelector('#score');
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // game variables
     let hitPosition;
+    let randomTargetPeriod = game.startPeriod; // on start move target every 1000ms (1.0s) 
     let randomTargetTimer;
     let countDownTimer;
 
@@ -71,9 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
             tile.addEventListener('click', () => {
                 // 'click' for mouse click or touch on touchscreen
                 if (tile.id == hitPosition) {
+                    clearInterval(randomTargetTimer); // clear repeat period
+
                     game.score++;
                     scoreDisplayed.textContent = game.score;
                     hitPosition = null;
+
+                    // speed up the moving target depending on score
+                    randomTargetPeriod = game.startPeriod - (game.score * 50); //set the new repeat period
+                    console.log(randomTargetPeriod);
+                    randomTargetTimer = setInterval(randomTarget, randomTargetPeriod); // run faster
                 } // if you hit the pink box
             });
         });
@@ -96,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
             game.score = 0;
             game.timePeriod = 60;
             isTargetHit();
-            randomTargetTimer = setInterval(randomTarget, 700); //every 0.7 sec
-            countDownTimer = setInterval(countDown, 1000); // every 1 sec
+            countDownTimer = setInterval(countDown, game.countDownPeriod); // every 1 sec
+            randomTargetTimer = setInterval(randomTarget, game.startPeriod); //every 0.5 sec
         }
     }
     startGame();
@@ -113,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // END of file - place module exports here
     // remember to import these into app.test.js
-    module.exports = { game, createGrid, startGame };
+    // module.exports = { game, createGrid, startGame }; // Uncomment when running Jest tests
 
 }) 
 
