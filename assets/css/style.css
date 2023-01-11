@@ -30,6 +30,10 @@ body {
   color: #ff0000;
 }
 
+#game-over {
+  color: #ff0000;
+}
+
 /* .grid and .tile dimensions chosen to match smallest device in developer tools
 - the Galaxy Fold. From here larger screens will scale up as per the media queries below*/
 .grid {

@@ -95,6 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(randomTargetTimer);
             scoreDisplayed.textContent = 0;
             timeLeft.textContent = 60;
+
+            // if the 'Game Over!' is displayed, remove it
+            const element = document.querySelector('#game-over');
+            element.textContent = "";
         }     
     }
     resetGame();
@@ -114,10 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameOver() {    
         // create the text 'Game Over'
         const gameOverText = document.querySelector('#game-over');
-        const gameOverDisplay = document.createElement('span');
-        gameOverDisplay.textContent = "Game Over!";
-        gameOverDisplay.style.color = 'red';
-        gameOverText.appendChild(gameOverDisplay);
+        gameOverText.textContent = "Game Over!";
+        //gameOverText.style.color = 'red'
     }
 
     // END of file - place module exports here
