@@ -101,6 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // if the 'Game Over!' is displayed, remove it
             const element = document.querySelector('#game-over');
             element.textContent = "";
+
+            start.disabled = false;
+            reset.disabled = true;
         }     
     }
     resetGame();
