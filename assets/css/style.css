@@ -103,14 +103,12 @@ button[type="submit"] {
 
 /*------------------------------------404 page*/
 .display-404 {
-  text-shadow: 1px 1px #212529;
   font-size: 48px;
   color: #000000;
 }
 
 .lead-404 {
   font-weight: 400;
-  text-shadow: 1px 1px #212529;
 }
 
 .hero-container {
