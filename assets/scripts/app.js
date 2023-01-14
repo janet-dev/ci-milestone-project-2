@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const start = document.querySelector('#start-game');
     const reset = document.querySelector('#reset-game');
+    // ensure when 'start' is available, 'reset' is not and vice versa
     start.disabled = false;
     reset.disabled = true;
 
@@ -83,9 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // speed up the moving target depending on score
                     randomTargetPeriod = game.startPeriod - (game.score * 50); //set the new repeat period
-                    console.log(randomTargetPeriod);
                     randomTargetTimer = setInterval(randomTarget, randomTargetPeriod); // run faster
-                } // if you hit the pink box
+                } // if you hit the coloured box
             });
         });
     }
@@ -97,6 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(randomTargetTimer);
             scoreDisplayed.textContent = 0;
             timeLeft.textContent = 60;
+
+            // remove event listener and ability to restart game by random clicking
+            tiles.forEach(tile => {
+                tile.classList.remove('target');
+                hitPosition = null;
+                tile.removeEventListener('click', isTargetHit);
+            });
 
             // if the 'Game Over!' is displayed, remove it
             const element = document.querySelector('#game-over');
@@ -127,6 +134,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // create the text 'Game Over'
         const gameOverText = document.querySelector('#game-over');
         gameOverText.textContent = "Game Over!";
+
+       // remove event listener and ability to restart game by random clicking
+        tiles.forEach(tile => {
+            tile.classList.remove('target');
+            hitPosition = null;
+            tile.removeEventListener('click', isTargetHit);
+        });
 
         start.disabled = true;
         reset.disabled = false;
