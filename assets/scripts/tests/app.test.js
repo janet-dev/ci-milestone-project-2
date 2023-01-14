@@ -27,9 +27,9 @@ beforeAll(() => {
 });
 
 describe("score and time left have initial values on loading game and before start of play", () => {
-    test("score text content is '000'", () => {
+    test("score text content is '0'", () => {
         const score = document.querySelector("#score");
-        expect(score.textContent).toEqual("000");
+        expect(score.textContent).toEqual("0");
     });
     test("time left text content is '60'", () => {
         const time = document.querySelector("#time-left");
@@ -58,9 +58,9 @@ describe("grid has been built", () => {
 
 describe("check initial HTML when Start button ONLY is clicked", () => {
     //Use Jest write unit testing for DOM manipulation by Clark on Dev.to
-    test("should set score to 000 and time left to 60", () => {
+    test("should set score to 0 and time left to 60", () => {
         document.body.innerHTML = `
-        <h2 class="full-width">Score: <span id="score">000</span> Time left: <span id="time-left">60</span>s</h2>
+        <h2 class="full-width">Score: <span id="score">0</span> Time left: <span id="time-left">60</span>s</h2>
         <div class="buttons-div">
             <button id="start-game">Start</button>
             <button id="reset-game">Reset</button>
@@ -72,7 +72,7 @@ describe("check initial HTML when Start button ONLY is clicked", () => {
         newScore.value = '88';
         newTime.value = '8';
         startGameBtn.click();
-        expect(newScore.textContent).toBe('000');
+        expect(newScore.textContent).toBe('0');
         expect(newTime.textContent).toBe('60');
     });
 });

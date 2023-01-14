@@ -119,12 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // create the text 'Game Over'
         const gameOverText = document.querySelector('#game-over');
         gameOverText.textContent = "Game Over!";
-        //gameOverText.style.color = 'red'
     }
 
     // END of file - place module exports here
     // remember to import these into app.test.js
-    // module.exports = { game, createGrid, startGame }; // Uncomment when running Jest tests
+    //module.exports = { game, createGrid, startGame }; // Uncomment when running Jest tests
 
 }) 
 

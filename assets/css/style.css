@@ -101,6 +101,10 @@ button[type="submit"] {
   margin-bottom: 1rem;
 }
 
+#form-submit {
+  color: #04eeff;
+}
+
 /*------------------------------------404 page*/
 .display-404 {
   font-size: 48px;
