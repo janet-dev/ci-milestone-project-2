@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const start = document.querySelector('#start-game');
     const reset = document.querySelector('#reset-game');
+    start.disabled = false;
+    reset.disabled = true;
 
     // game variables
     let hitPosition;
@@ -111,6 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
             isTargetHit();
             countDownTimer = setInterval(countDown, game.countDownPeriod); // every 1 sec
             randomTargetTimer = setInterval(randomTarget, game.startPeriod); //every 0.5 sec
+            
+            start.disabled = true;
+            reset.disabled = false;
         }
     }
     startGame();
@@ -119,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // create the text 'Game Over'
         const gameOverText = document.querySelector('#game-over');
         gameOverText.textContent = "Game Over!";
+
+        start.disabled = true;
+        reset.disabled = false;
     }
 
     // END of file - place module exports here
