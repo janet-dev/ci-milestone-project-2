@@ -19,42 +19,51 @@ body {
   padding: 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h2 {
+  color: #fe2da3;
+}
+
+.white-text {
+  color: #ffffff;
 }
 
 #score {
-  color: #0000ff;
+  color: #fe2da3;
 }
 
 #time-left {
-  color: #ff0000;
+  color: #fe2da3;
 }
 
 #game-over {
-  color: #ff0000;
+  color: #04eeff;
 }
 
 /* .grid and .tile dimensions chosen to match smallest device in developer tools
 - the Galaxy Fold. From here larger screens will scale up as per the media queries below*/
 .grid {
   margin: auto;
-  /*allow for borders - see .squares*/
+  /*allow for borders*/
   width: 22rem;
-  height: 22rem;
+  height: 23rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .tile {
-  height: 7rem;
+  height: 7.5rem;
   width: 7rem;
   background-color: #000000;
-  border: solid #ffffff 0.1rem;
+  border: solid #ffffff 0.15rem;
 }
 
 .target {
-  background-color: #ff00ff; 
+  background-color: #04eeff; 
 }
 
 .buttons-div {
@@ -64,6 +73,7 @@ body {
 /*------------------------------------Contact form via EmailJS*/
 
 .contact-heading {
+  color: #ffffff;
   font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -95,6 +105,7 @@ button[type="submit"] {
 .display-404 {
   text-shadow: 1px 1px #212529;
   font-size: 48px;
+  color: #000000;
 }
 
 .lead-404 {

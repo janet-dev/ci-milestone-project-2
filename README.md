@@ -182,6 +182,8 @@ Girl playing Whac-A-Mole by [sa_ku_ra / sakura](https://www.flickr.com/photos/sa
 
 Wallpaper for 404 page from [Maxim Berg](https://unsplash.com/@maxberg) on Unsplash
 
+Colour palette [Minty Leaves](https://blog.depositphotos.com/neon-color-palettes.html) by Maria Sibirtseva 
+
 ### Code
 Although the code is the work of the author, some of the code has been sourced from or inspired by others.
 
