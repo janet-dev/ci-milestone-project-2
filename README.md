@@ -87,6 +87,7 @@ After asking the advice of other gamers, further features are required:
 * JavaScript validation from [JSHint](https://jshint.com/)
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
 * Raleway font from [Google Fonts](https://fonts.google.com/?query=raleway).
+* Icon library and toolkit from [Font Awesome](https://fontawesome.com/).
 * Favicon created on [favicon.cc](https://www.favicon.cc/).
 * Online photo editor from [Pixlr](https://pixlr.com/x/).
 * Stock photos from [Unsplash](https://unsplash.com).

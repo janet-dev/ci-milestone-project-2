@@ -1,4 +1,4 @@
-/*Game styling*/
+/* Game styling */
 
 html {
     /* 
@@ -70,7 +70,29 @@ h2 {
   padding-top: 1rem;
 }
 
-/*------------------------------------Contact form via EmailJS*/
+/*------------------------------------ Instructions */
+
+.instructions {
+  width: 21rem;
+  text-align: left;
+  margin: auto;
+}
+
+ul {
+  width: 19rem;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.fa-solid {
+  color: #04eeff;
+}
+
+/*------------------------------------ Contact form via EmailJS */
 
 .contact-heading {
   color: #ffffff;
@@ -105,7 +127,7 @@ button[type="submit"] {
   color: #04eeff;
 }
 
-/*------------------------------------404 page*/
+/*------------------------------------ 404 page */
 .display-404 {
   font-size: 48px;
   color: #000000;
