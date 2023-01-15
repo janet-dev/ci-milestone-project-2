@@ -131,6 +131,16 @@ button[type="submit"] {
   color: #04eeff;
 }
 
+/*------------------------------------ footer */
+.footer{
+  color: white;
+  text-align: center;
+}
+
+.fa-brands {
+  color: #a381ce;
+}
+
 /*------------------------------------ 404 page */
 .display-404 {
   font-size: 48px;
