@@ -89,6 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    function removeTarget() {
+            // remove event listener and ability to restart game by random clicking on grid
+            tiles.forEach(tile => {
+            tile.classList.remove('target');
+            hitPosition = null;
+            tile.removeEventListener('click', isTargetHit);
+        });
+    }
    
     function resetGame() {
         // reset game when Reset button is clicked/touched
@@ -98,12 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             scoreDisplayed.textContent = 0;
             timeLeft.textContent = 60;
 
-            // remove event listener and ability to restart game by random clicking
-            tiles.forEach(tile => {
-                tile.classList.remove('target');
-                hitPosition = null;
-                tile.removeEventListener('click', isTargetHit);
-            });
+            removeTarget(); // remove coloured tile and deactivate clicking
 
             // if the 'Game Over!' is displayed, remove it
             const element = document.querySelector('#game-over');
@@ -135,12 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const gameOverText = document.querySelector('#game-over');
         gameOverText.textContent = "Game Over!";
 
-       // remove event listener and ability to restart game by random clicking
-        tiles.forEach(tile => {
-            tile.classList.remove('target');
-            hitPosition = null;
-            tile.removeEventListener('click', isTargetHit);
-        });
+        removeTarget(); // remove coloured tile and deactivate clicking
 
         start.disabled = true;
         reset.disabled = false;
