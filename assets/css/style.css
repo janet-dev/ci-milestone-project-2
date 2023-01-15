@@ -133,8 +133,10 @@ button[type="submit"] {
 
 /*------------------------------------ footer */
 .footer{
+  width: 21rem;
   color: white;
   text-align: center;
+  margin: auto;
 }
 
 .fa-brands {
@@ -165,7 +167,8 @@ button[type="submit"] {
   font-size: larger;
 }
 
-/* Device Breakpoints
+/*------------------------------------ Device Breakpoints */
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   html {
