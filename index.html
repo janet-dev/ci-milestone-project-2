@@ -24,7 +24,7 @@
     <h1>Box Hunt</h1>
 
     <h2 class="white-text">Score: <span id="score">0</span> Time left: <span id="time-left">60</span>s</h2>
-    <h3 id="game-over"></h3>
+    <h2 id="game-over"></h2>
 
     <div class="grid">
         <!-- JavaScript will create the 3x3 grid with 9 tiles:
@@ -56,15 +56,15 @@
     </ul>
 
     <h2>Email Us</h2>
-    <h2 class="contact-heading">Submit your game ideas!</h2> 
+    <p class="contact-heading">Submit your game ideas!</p> 
 
     <form onsubmit="return sendMail(this);" id="send-idea">
         <input type="text" name="name" id="fullname" placeholder="Full Name" required>
         <input type="text" name="emailaddress" id="emailaddress" placeholder="Email" required>
         <textarea rows="5" name="message" id="message" placeholder="Game idea" required></textarea>
+        <h2 id="form-submit"></h2>
         <button type="submit" id="submit-button">Send My Idea</button>
-    </form>
-    <h3 id="form-submit"></h3>                
+    </form>              
     
     <script src="assets/scripts/app.js" charset="utf-8"></script>
     <script src="assets/scripts/sendEmail.js"></script>
