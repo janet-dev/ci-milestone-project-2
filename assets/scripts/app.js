@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // game variables
     let hitPosition;
-    let randomTargetPeriod = game.startPeriod; // on start move target every 1000ms (1.0s) 
+    let randomTargetPeriod = game.startPeriod; // on start, move target every 1000ms (1.0s) 
     let randomTargetTimer;
     let countDownTimer;
 
@@ -124,12 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
         start.onclick = () => {
             game.score = 0;
             game.timePeriod = 60;
-            isTargetHit();
-            countDownTimer = setInterval(countDown, game.countDownPeriod); // every 1 sec
-            randomTargetTimer = setInterval(randomTarget, game.startPeriod); //every 0.5 sec
-            
             start.disabled = true;
             reset.disabled = false;
+            
+            countDownTimer = setInterval(countDown, game.countDownPeriod); // every 1 sec
+            randomTargetTimer = setInterval(randomTarget, game.startPeriod);
+            
+            isTargetHit(); // check if target is hit
         }
     }
     startGame();
