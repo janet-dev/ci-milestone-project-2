@@ -24,7 +24,7 @@
     <h1>Box Hunt</h1>
 
     <h2 class="white-text">Score: <span id="score">0</span> Time left: <span id="time-left">60</span>s</h2>
-    <h2 id="game-over"></h2>
+    <h2 id="game-over" aria-label="Text visible when game ends"></h2>
 
     <div class="grid">
         <!-- JavaScript will create the 3x3 grid with 9 tiles:
@@ -59,10 +59,10 @@
     <p class="contact-heading">Submit your game idea...</p> 
 
     <form onsubmit="return sendMail(this);" id="send-idea">
-        <input type="text" name="name" id="fullname" placeholder="Full Name" required>
-        <input type="text" name="emailaddress" id="emailaddress" placeholder="Email" required>
-        <textarea rows="5" name="message" id="message" placeholder="Game idea" required></textarea>
-        <h2 id="form-submit"></h2>
+        <input type="text" name="name" id="fullname" aria-label="Enter full name" placeholder="Full Name" required>
+        <input type="text" name="emailaddress" id="emailaddress" aria-label="Enter email address" placeholder="Email" required>
+        <textarea rows="5" name="message" id="message" aria-label="Enter game idea" placeholder="Game idea" required></textarea>
+        <h2 id="form-submit" aria-label="Text for successful or failed form submission"></h2>
         <button type="submit" id="submit-button">Send My Idea</button>
     </form>              
     
@@ -73,8 +73,8 @@
 
 <footer class="footer">
     <p>Game made with 💜 by Janet 
-        <a target="_blank" href="https://github.com/janet-dev">
-            <i class="fa-brands fa-github" aria-label="Github account link"></i>
+        <a target="_blank" aria-label="Github account link" href="https://github.com/janet-dev">
+            <i class="fa-brands fa-github" aria-label="Github icon"></i>
         </a> 2023</p>
 </footer>
 
