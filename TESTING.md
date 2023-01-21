@@ -38,7 +38,18 @@ No framework was used for building the site, only HTML5, CSS3 and JavaScript - s
     | Extra large              | ≥1200px    |
 
 ### Console Errors
+<h2 align="center"><img src="docs/testing/console/console.jpg"></h2>
+1 error, 1 warning and 1 possible improvement were detected.
 
+* The error was removed by running the site on Chrome in Incognito mode.
+Stack Overflow user [Chrostip Schaejn](https://stackoverflow.com/questions/72494154/a-listener-indicated-an-asynchronous-response-by-returning-true-but-the-messag) advised that this error was cause by various Chrome extensions.
+* The warning was also absent from Chrome in Incognito mode
+Stack Overflow user [Takash Futada](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) advised that "GitHub hosted pages disable FLoC, which is Google's 3rd party cookie alternative. GitHub, Microsoft, doesn't seems to like it."
+* The possible improvement was still present
+Google Forum user [Adrià Vilanova Martínez](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) advised that "this only means that Chrome will provide less details about the user platform and Chrome version, since these are used by websites to fingerprint users."
+
+<h2 align="center"><img src="docs/testing/console/incognito.jpg"></h2>
+Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js - EmailJS
 
 ### Code Validation
 * HTML - No errors and 2 warnings were detected by [W3C](https://validator.w3.org/#validate_by_input) for pages:
