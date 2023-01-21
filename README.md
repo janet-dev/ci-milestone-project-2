@@ -81,11 +81,6 @@ After asking the advice of other gamers, further features are required:
 * Debugging assisted by [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/).
 * Version control integrated into Gitpod from [Git](https://git-scm.com/).
 * Project deployment provided by [GitHub Pages](https://pages.github.com/).
-* Automated testing provided by [Jest](https://jestjs.io/).
-* HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
-* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
-* JavaScript validation from [JSHint](https://jshint.com/)
-* Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
 * Raleway font from [Google Fonts](https://fonts.google.com/?query=raleway).
 * Icon library and toolkit from [Font Awesome](https://fontawesome.com/).
 * Favicon created on [favicon.cc](https://www.favicon.cc/).
@@ -94,10 +89,16 @@ After asking the advice of other gamers, further features are required:
 * Paint from [Microsoft](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)
 * Snip and Sketch from [Microsoft](https://apps.microsoft.com/store/detail/snipping-tool/9MZ95KL8MR0L?hl=en-gb&gl=gb)
 * PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
+* Automated testing provided by [Jest](https://jestjs.io/).
+* HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
+* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
+* JavaScript validation from [JSHint](https://jshint.com/)
+* Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
+* [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
 
 ## Testing
 
-See the document [TESTING.md](TESTING.md) for the automated amd manual tests.
+See the document [TESTING.md](TESTING.md) for the code validation, automated and manual tests.
 
 ## Deployment
 
