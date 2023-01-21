@@ -105,3 +105,5 @@ Although the code is the work of the author, some of the code has been sourced f
 [Use Jest write unit testing for DOM manipulation](https://dev.to/ms314006/use-jest-write-unit-testing-for-dom-manipulation-3n6c) by Clark on Dev.to
 
 [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+
+[Disallow aria-label misuse](https://html-validate.org/rules/aria-label-misuse.html)
