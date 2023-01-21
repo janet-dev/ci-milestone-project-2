@@ -89,7 +89,7 @@ Initially, the WAVE detected:
 * Errors solved by adding aria-labels to the: 
     - form inputs
     - empty headings
-    - a tag of footer link
+    - a tag in the footer for the icon
 + [WAVE Report 1](docs/testing/wave/wave1-solved.jpg) : Errors Solved
 + [WAVE Report 2](docs/testing/wave/wave2-solved.jpg) : Errors Solved
 
