@@ -70,16 +70,27 @@ Now only 1 possible improvement is detected by Chrome in Incognito mode. Source 
 ### Lighthouse
 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. 
 
-The desktop audit scored 100 across the four features for all pages. Here is a typical summary:
-<h2 align="left"><img src="docs/pictures/courses-summary-desktop.jpg"></h2>
-
-The mobile audit scored >90 across the four features for all pages. Here is the lowest-scored summary:
-<h2 align="left"><img src="docs/pictures/courses-summary-mobile.jpg"></h2>
-
 index.html
 
-- [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-index-desktop-2.pdf)
-- [Mobile PDF report](docs/testing/lighthouse-reports/lighthouse-index-mobile-2.pdf)
+- [Desktop PDF report](docs/testing/lighthouse/lighthouse-index-desktop-2.pdf)
+<h2 align="center"><img src="docs/testing/lighthouse/lighthouse-index-desktop.jpg"></h2>
+
+- [Mobile PDF report](docs/testing/lighthouse/lighthouse-index-mobile-2.pdf)
+<h2 align="center"><img src="docs/testing/lighthouse/lighthouse-index-mobile.jpg"></h2>
+
+404.html
+
+The 404 page received a low score for accessibility because the page automatically directs the user back to the home page after 3 seconds. 
+
+I was not able use a 404 page with an active link for this MP2 repository and I believe it would require a custom domain as stated by Stack Overflow user [Daniel Powell](https://stackoverflow.com/questions/14908512/how-can-i-set-a-custom-404-page-on-github-pages).
+
+Github have published the procedure to [create a custom 404 page](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) for the Pages site username.github.io, but not for any repository. I was able to publish the 404 page with an active link for my own Pages site [janet-dev.github.io](https://janet-dev.github.io/), but not for this MP2 repository. The index.html link was unactive on deployment but not in Developer Tools and clicking on it would cause a redirection to janet-dev.github.io. Therefore I decided to build an automatic redirection from the 404 page to this repository's home page. As the MP2 site has only one short page, I believe this not be an accessibility issue. If the user is on the 404 page, then they clearly shouldn't be there and the one page they should be on is the home page. Automatic redirection is an issue for sites of many pages but not a small one-page site.
+
+- [Desktop PDF report](docs/testing/lighthouse/lighthouse-404-desktop.pdf)
+<h2 align="center"><img src="docs/testing/lighthouse/lighthouse-404.jpg"></h2>
+
+- [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf) : Same score as for desktop
+
 
 ### Web Accessibility Evaluation
 [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/) "help authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content. Our philosophy is to focus on issues that we know impact end users, facilitate human evaluation, and to educate about web accessibility."
@@ -99,7 +110,7 @@ Initially, the WAVE detected:
     - a tag in the footer for the icon
 + [WAVE Report 1](docs/testing/wave/wave1-solved.jpg) : Errors Solved
 + [WAVE Report 2](docs/testing/wave/wave2-solved.jpg) : Errors Solved
-<h2 align="left"><img src="docs/testing/wave/wave.jpg"></h2>
+<h2 align="center"><img src="docs/testing/wave/wave.jpg"></h2>
 
 
 ## Credits
