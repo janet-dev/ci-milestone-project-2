@@ -56,9 +56,11 @@ Now only 1 possible improvement is detected by Chrome in Incognito mode. Source 
     - [index.html PDF report](docs/testing/w3c/html-errors.pdf) : 5 errors, 6 warnings
     - [index.html PDF report](docs/testing/w3c/html-errors-solved.pdf) : 0 errors, 2 warnings
     Warnings are caused by 2 headings where JavaScript would create the text content. Added aria-labels for accessibility - see WAVE section below.
-<h2 align="center"><img src="docs/testing/w4c/html-index.jpg"></h2>
+    <h2 align="center"><img src="docs/testing/w3c/html-index.jpg"></h2>
+    
+    - [404.html PDF report](docs/testing/w3c/html-404.pdf) : 0 errors, 0 warnings
+    <h2 align="center"><img src="docs/testing/w3c/html-404.jpg"></h2>
 
-    - [404.html PDF report]()
 
 * CSS - No errors and 6 warnings were detected by [CSS Lint](http://csslint.net/) for:
     - [style.css PDF report](docs/testing/csslint/css-lint-report.pdf)
@@ -97,6 +99,8 @@ Initially, the WAVE detected:
     - a tag in the footer for the icon
 + [WAVE Report 1](docs/testing/wave/wave1-solved.jpg) : Errors Solved
 + [WAVE Report 2](docs/testing/wave/wave2-solved.jpg) : Errors Solved
+<h2 align="left"><img src="docs/testing/wave/wave.jpg"></h2>
+
 
 ## Credits
 
