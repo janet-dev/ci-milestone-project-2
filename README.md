@@ -91,7 +91,7 @@ After asking the advice of other gamers, further features are required:
 * PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
 * Automated testing provided by [Jest](https://jestjs.io/).
 * HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
-* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
+* CSS validation from [CSS Lint](http://csslint.net/).
 * JavaScript validation from [JSHint](https://jshint.com/)
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
 * [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)

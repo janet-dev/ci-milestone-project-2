@@ -53,12 +53,17 @@ Now only 1 possible improvement is detected by Chrome in Incognito mode. Source 
 
 ### Code Validation
 * HTML - No errors and 2 warnings were detected by [W3C](https://validator.w3.org/#validate_by_input) for pages:
-    - [index.html PDF report](docs/testing/w3c-validation/html-errors.pdf) : 5 errors, 6 warnings
-    - [index.html PDF report](docs/testing/w3c-validation/html-errors-solved.pdf) : 0 errors, 2 warnings
+    - [index.html PDF report](docs/testing/w3c/html-errors.pdf) : 5 errors, 6 warnings
+    - [index.html PDF report](docs/testing/w3c/html-errors-solved.pdf) : 0 errors, 2 warnings
     Warnings are caused by 2 headings where JavaScript would create the text content. Added aria-labels for accessibility - see WAVE section below.
+<h2 align="center"><img src="docs/testing/w4c/html-index.jpg"></h2>
 
-* CSS - No errors or warnings were detected by [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input) for:
-    - [style.css PDF report](docs/testing/w3c-validation/w3c-css.pdf)
+    - [404.html PDF report]()
+
+* CSS - No errors and 6 warnings were detected by [CSS Lint](http://csslint.net/) for:
+    - [style.css PDF report](docs/testing/csslint/css-lint-report.pdf)
+    - CSS Lint was used because [W3C Jigsaw](docs/testing/csslint/jigsaw-unavailable.jpg) validator was unavailable.
+<h2 align="center"><img src="docs/testing/csslint/css-lint.jpg"></h2>
 
 ### Lighthouse
 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. 
