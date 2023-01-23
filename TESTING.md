@@ -91,6 +91,18 @@ Github have published the procedure to [create a custom 404 page](https://docs.g
 - [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf) : Same score as for desktop
 
 ### JSHint
+[JSHint](https://jshint.com/) is a community-driven tool that detects errors and potential problems in JavaScript code.
+
+app.js
+
+- No errors or warnings were detected.
+- [JavaScript PDF report](docs/testing/jshint/jshint-app.pdf)
+<h2 align="center"><img src="docs/testing/jshint/jshint-app.jpg"></h2>
+
+sendEmail.js
+
+- No errors, 2 warnings were detected - 1 undefined variable and 1 unused variable. Both are used in the index.html EmailJS code.
+<h2 align="center"><img src="docs/testing/jshint/jshint-sendemail.jpg"></h2>
 
 
 
