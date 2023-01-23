@@ -4,9 +4,57 @@
 - [Jest](https://jestjs.io/) is a delightful JavaScript Testing Framework with a focus on simplicity. 
 - Jest aims to work out of the box, config free, on most JavaScript projects.
 
-To run tests in the terminal, type (without the `.test.js` extension):
+Ideally if time had been permitting, the JavaScript code could have been generated with the help of Jest for Test Driven Development (TDD). Here the tests would be written before the code, which means the tests initially fail. Just enough code would then be created in order to pass the test. The process continues incremently like this; 
+- write the next test 
+- fail the test 
+- write the next section of code to pass 
+- pass the test without breaking any previous tests
+- improve or refactor the code
+until the project is completed. This process is called Red-Green-Refactor cycle. 
 
-`npm test -- filename`
+By the end, a suite of tests can be run for the whole JavaScript app, just by typing one command into the terminal:
+
+    `npm test`
+
+To run tests in the terminal for a specific JavaScript file, type (without the `.test.js` extension):
+
+    `npm test -- filename`
+
+This is how Jest can be used for TDD and automated testing.
+
+### Testing of app.js
+
+app.js is the main game app, which:
+- creates the game board
+- generates a random moving target
+- keeps score of hit targets
+- speeds up the game depending on score
+- terminates, resets, starts the game
+
+It was decided to devise three tests:
+1. Check that the score and time-left, have the correct initial values on loading game and before the start of play. The elements of ids 'score' and 'time-left' are accessed and checked that their values, via text content, are '0' and '60' respectively.
+<h2 align="left"><img src="docs/testing/jest/jest-test-1.jpg"></h2>
+
+2. Check that the board grid has been built with correct ids. The board is made up of 9 tiles in a 3x3 grid. Each tile is is given a unique id between '0' and '8'. for this test set, all elements of the class 'tile' are accessed to check that there are actually 9 tiles and that they each have the expected id. Just to double check, if the code
+
+    `expect(squares[9].id).toEqual('9');`
+
+is added, the tests will fail.
+
+<h2 align="left"><img src="docs/testing/jest/jest-test-2.jpg"></h2>
+
+3. Check that values for score and time-left will be returned back to default, when Start button (only) is clicked. Here, the score and time-left values are forced to be '88' and '8' respectively. On clicking the start button, checks are made to ensure the values return to game start defaults of '0' and '60' respectively.
+
+<h2 align="left"><img src="docs/testing/jest/jest-test-3.jpg"></h2>
+
+The tests above give a flavour of how automated testing can be achieved. The test results are seen below:
+<h2 align="left"><img src="docs/testing/jest/jest-tests.jpg"></h2>
+
+
+
+
+
+
 
 ## Manual Testing
 

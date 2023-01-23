@@ -8,12 +8,6 @@ let game;
 let createGrid; 
 let startGame;
 
-/*
-Jest Spy to check if alert has been called.
-First argument to spyOn is the window and  the second is the name of the method, in this case "alert".
-So we're going to catch it when an alert happens  and divert it harmlessly into an empty function. 
-*/
-
 // Box Hunt Game
 beforeAll(() => {
     let fs = require("fs");
@@ -52,7 +46,6 @@ describe("grid has been built", () => {
         expect(squares[6].id).toEqual('6');
         expect(squares[7].id).toEqual('7');
         expect(squares[8].id).toEqual('8');
-        //expect(squares[9].id).toEqual('9'); //this should fail the test
     });           
 });
 
