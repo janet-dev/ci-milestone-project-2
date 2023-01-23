@@ -55,17 +55,16 @@ Now only 1 possible improvement is detected by Chrome in Incognito mode. Source 
 * HTML - No errors and 2 warnings were detected by [W3C](https://validator.w3.org/#validate_by_input) for pages:
     - [index.html PDF report](docs/testing/w3c/html-errors.pdf) : 5 errors, 6 warnings
     - [index.html PDF report](docs/testing/w3c/html-errors-solved.pdf) : 0 errors, 2 warnings
-    Warnings are caused by 2 headings where JavaScript would create the text content. Added aria-labels for accessibility - see WAVE section below.
+    - Warnings were caused by 2 headings where JavaScript would create the text content. Added aria-labels for accessibility - see WAVE section below.
     <h2 align="center"><img src="docs/testing/w3c/html-index.jpg"></h2>
     
     - [404.html PDF report](docs/testing/w3c/html-404.pdf) : 0 errors, 0 warnings
     <h2 align="center"><img src="docs/testing/w3c/html-404.jpg"></h2>
 
 
-* CSS - No errors and 6 warnings were detected by [CSS Lint](http://csslint.net/) for:
-    - [style.css PDF report](docs/testing/csslint/css-lint-report.pdf)
-    - CSS Lint was used because [W3C Jigsaw](docs/testing/csslint/jigsaw-unavailable.jpg) validator was unavailable.
-<h2 align="center"><img src="docs/testing/csslint/css-lint.jpg"></h2>
+* CSS - No errors and 1 warning was detected by [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/) for:
+    - [style.css PDF report](docs/testing/w3c/w3c-css.pdf)
+<h2 align="center"><img src="docs/testing/w3c/w3c-css.jpg"></h2>
 
 ### Lighthouse
 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. 
@@ -90,6 +89,9 @@ Github have published the procedure to [create a custom 404 page](https://docs.g
 <h2 align="center"><img src="docs/testing/lighthouse/lighthouse-404.jpg"></h2>
 
 - [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf) : Same score as for desktop
+
+### JSHint
+
 
 
 ### Web Accessibility Evaluation
