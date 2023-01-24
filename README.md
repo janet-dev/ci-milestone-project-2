@@ -41,37 +41,94 @@ The site is designed to be responsive and accessible on a range of devices, maki
 As this is a brand new site with limited features, so the user stories were taken from the perspective of the visiting or anonymous user. We don't have any traffic data yet and we don't really know who are users are at this point.
 * As a visiting user, I would like to connect with the company via email.
 * As a visiting user, I would like to easily understand how to play the game.
-* As a visiting user, I would like to play at increasingly advanced levels.
-* As a visiting user, I would like to see my score and my current level.
+* As a visiting user, I would like to play with increasing difficulty.
+* As a visiting user, I would like to see my score.
 
 ### Owner goals
 * I would like to build a retro 2D game.
-* I wouild like to build a family game which is easy for both children and adults to use.
+* I would like to build a family game which is easy for both children and adults to use.
 * I would like the game to be visually attractive and fun to play.
-* I would like the game to be created for most modern devices.
-* I would like to create code that is easy for others to follow.
-* I would like to create clean code that follows best practices.
 
 ### Design
-* Colour Scheme
-    - Colours white (#ffffff) and black (#000000) are used for the game grid.
-    - Bright colours for the moving tile.
+* The Game
+	- This game is inspired by the mini course [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by **Ania Kubow** on freeCodeCamp. In particular, the tutorial [Whac-a-mole](https://www.youtube.com/watch?v=ec8vSKJuZTk) starting at time 1:04:37.
 
-	This colour scheme was chosen for simplicity, readability and to give a retro feel. Too much colour can make the site to busy or distracting.
+* Colour Scheme
+    - White (#ffffff) grid on a black (#000000) background are used for the game board.
+    - Electric blue (#04eeff) for the moving target, main h1 heading and icons.
+	- Persian rose (#fe2da3) for other headings.
+	- Lavender floral (#a381ce) for the footer icons.
+
+<h2 align="center"><img src="docs/ux/palette.jpg"></h2>
+
+This colour scheme was chosen for simplicity, readability and fun. The game was given a retro feel, which would appeal to adults and children alike. Inspiration was taken from palette number 4 [(Gentle Lilac)](https://blog.depositphotos.com/neon-color-palettes.html) of the blog post "30 Trendy Neon Color Palettes for Bold Designs" by Maria Sibirtseva.
+
+Game visuals were inspired by Sean Young's [Breakout Game](https://seanyoung247.github.io/breakout/).
 
 * Typography
-    - For the home and about pages, [Raleway font](https://fonts.google.com/specimen/Raleway) is used for good readability and contrast when required. It is considered to be number eight in the [The 10 Best Google Fonts in 2023](https://kinsta.com/blog/best-google-fonts/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
+    - For the site, [Raleway font](https://fonts.google.com/specimen/Raleway) is used for good readability and contrast when required. It is considered to be number eight in the [The 10 Best Google Fonts in 2023](https://kinsta.com/blog/best-google-fonts/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
 
 
 ### Wireframes
-See the site design as a [wireframe PDF](docs/ux/wireframe.pdf). It includes both desktop and mobile versions.
+Mobile
+<h2 align="center"><img src="docs/ux/mobile.jpg"></h2>
+
+Tablet
+<h2 align="center"><img src="docs/ux/tablet.jpg"></h2>
+
+Desktop
+<h2 align="center"><img src="docs/ux/desktop.jpg"></h2>
 
 ## Features
-This website will initially consist of three visible pages (Home, Courses, About) and one hidden (Confirmation for subscription)
+This website consists of one page containing the game area, instructions and contact form. It was decided to produce the game on a black background as the gave a more polished look to the product and looked much better on mobile devices. The site will look the same on all devices.
+
+<h2 align="center"><img src="docs/ux/devices.jpg"></h2>
+
+### Navigation
+There is no navigation as this is a small one-page site.
+
+### Home Page
+<h2 align="left"><img src="docs/pictures/home.jpg"></h2>
+
+This page will feature:
+- Coloured title, which tells the user the name of the game.
+
+* Game board - 
+<h2 align="left"><img src="docs/pictures/board.jpg"></h2>
+
+Playing the game
+<h2 align="left"><img src="docs/pictures/game-play.jpg"></h2>
+
+Game over
+<h2 align="left"><img src="docs/pictures/game-over.jpg"></h2>
+
+* Instructions - 
+<h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
+
+* Email - 
+<h2 align="left"><img src="docs/pictures/email.jpg"></h2>
+
+Entering details
+<h2 align="left"><img src="docs/pictures/email-details.jpg"></h2>
+
+Email sent
+<h2 align="left"><img src="docs/pictures/email-sent.jpg"></h2>
+
+Email received
+<h2 align="left"><img src="docs/pictures/email-rx.jpg"></h2>
+
+* Footer - 
+<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
+* Social media link for GitHub account accessed via the appropriate icon.
+
+### 404 Page
+<h2 align="left"><img src="docs/pictures/page-404.jpg"></h2>
 
 ## Future Features
-After asking the advice of other gamers, further features are required:
-* feature 1
+After asking the advice of other gamers and developers, further features are required:
+* show highest score attained so far by using **localStorage**
+	- [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+* remove points when the user misses the target
 
 ## Technology Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
@@ -82,6 +139,7 @@ After asking the advice of other gamers, further features are required:
 * Version control integrated into Gitpod from [Git](https://git-scm.com/).
 * Project deployment provided by [GitHub Pages](https://pages.github.com/).
 * Raleway font from [Google Fonts](https://fonts.google.com/?query=raleway).
+* Colour palette generated by [Coolors](https://coolors.co/).
 * Icon library and toolkit from [Font Awesome](https://fontawesome.com/).
 * Favicon created on [favicon.cc](https://www.favicon.cc/).
 * Online photo editor from [Pixlr](https://pixlr.com/x/).
@@ -91,10 +149,10 @@ After asking the advice of other gamers, further features are required:
 * PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
 * Automated testing provided by [Jest](https://jestjs.io/).
 * HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
-* CSS validation from [CSS Lint](http://csslint.net/).
+* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/).
 * JavaScript validation from [JSHint](https://jshint.com/)
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
-* [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
+* Web Accessibility Evaluation Tools by [WAVE](https://wave.webaim.org/)
 
 ## Testing
 
@@ -184,8 +242,6 @@ Girl playing Whac-A-Mole by [sa_ku_ra / sakura](https://www.flickr.com/photos/sa
 
 Wallpaper for 404 page from [Maxim Berg](https://unsplash.com/@maxberg) on Unsplash
 
-Colour palette [Minty Leaves](https://blog.depositphotos.com/neon-color-palettes.html) by Maria Sibirtseva 
-
 ### Code
 Although the code is the work of the author, some of the code has been sourced from or inspired by others.
 
@@ -198,6 +254,8 @@ Many of the references have been embedded as links throughout this document and 
 [Convert px to rem - An effective workflow](https://dev.to/swastikyadav/convert-px-to-rem-an-effective-workflow-4m4j) by Swastik Yadav on DEV Community
 
 [Typical Device Breakpoints](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp) from W3 Schools
+
+[Sending Emails Using EmailJS](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/tree/master/03-SendingEmailsUsingEmailJS/06-sending_emails) tutorial by Code Institute
 
 [Creating a custom 404 page for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) by GitHub Docs
 
