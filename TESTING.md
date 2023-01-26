@@ -14,11 +14,11 @@ until the project is completed. This process is called Red-Green-Refactor cycle.
 
 By the end, a suite of tests can be run for the whole JavaScript app, just by typing one command into the terminal:
 
-    `npm test`
+`npm test`
 
 To run tests in the terminal for a specific JavaScript file, type (without the `.test.js` extension):
 
-    `npm test -- filename`
+`npm test -- filename`
 
 This is how Jest can be used for TDD and automated testing.
 
@@ -85,8 +85,28 @@ No framework was used for building the site, only HTML5, CSS3 and JavaScript - s
     | Large                    | ≥992px     |
     | Extra large              | ≥1200px    |
 
+* Mobile devices - Chrome Developer Tools supplies a suite of emulated devices for simulating how sites would appear for different mobile phone models. The follow were used for manually testing the project:
+<h2 align="left"><img src="docs/testing/manual/devices-tested.jpg"></h2>
+
+
+### Testing Against User Stories
+* As a visiting user, I would like to connect with the company via email.
+    - The emailing feature is provided by the JavaScript library, [EmailJS](https://www.emailjs.com/). This service allows you to connect your email service, in this case Gmail, build an email template, and send it from JavaScript without any server code.
+<h2 align="left"><img src="docs/testing/stories/email.jpg"></h2>
+
+* As a visiting user, I would like to easily understand how to play the game.
+    - Instructions on how to play the game are included under the game board.
+<h2 align="left"><img src="docs/testing/stories/instructions.jpg"></h2>
+
+* As a visiting user, I would like to play with increasing difficulty.
+    - The randomly generated target moves quicker as the score increases, hence it becomes harder to hit the target and score points.
+<h2 align="left"><img src="docs/testing/stories/is-target-hit.jpg"></h2>
+
+* As a visiting user, I would like to see my score. 
+<h2 align="left"><img src="docs/testing/stories/game-play.jpg"></h2>
+
 ### Console Errors
-<h2 align="center"><img src="docs/testing/console/console.jpg"></h2>
+<h2 align="left"><img src="docs/testing/console/console.jpg"></h2>
 1 error, 1 warning and 1 possible improvement were detected.
 
 * The error was removed by running the site on Chrome in Incognito mode.
@@ -96,23 +116,23 @@ Stack Overflow user [Takash Futada](https://stackoverflow.com/questions/69619035
 * The possible improvement was still present
 Google Forum user [Adrià Vilanova Martínez](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) advised that "this only means that Chrome will provide less details about the user platform and Chrome version, since these are used by websites to fingerprint users."
 
-<h2 align="center"><img src="docs/testing/console/incognito.jpg"></h2>
+<h2 align="left"><img src="docs/testing/console/incognito.jpg"></h2>
 Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js - EmailJS
 
-### Code Validation
+### W3C Validation
 * HTML - No errors and 2 warnings were detected by [W3C](https://validator.w3.org/#validate_by_input) for pages:
     - [index.html PDF report](docs/testing/w3c/html-errors.pdf) : 5 errors, 6 warnings
     - [index.html PDF report](docs/testing/w3c/html-errors-solved.pdf) : 0 errors, 2 warnings
     - Warnings were caused by 2 headings where JavaScript would create the text content. Added aria-labels for accessibility - see WAVE section below.
-    <h2 align="center"><img src="docs/testing/w3c/html-index.jpg"></h2>
+    <h2 align="left"><img src="docs/testing/w3c/html-index.jpg"></h2>
     
     - [404.html PDF report](docs/testing/w3c/html-404.pdf) : 0 errors, 0 warnings
-    <h2 align="center"><img src="docs/testing/w3c/html-404.jpg"></h2>
+    <h2 align="left"><img src="docs/testing/w3c/html-404.jpg"></h2>
 
 
 * CSS - No errors and 1 warning was detected by [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/) for:
     - [style.css PDF report](docs/testing/w3c/w3c-css.pdf)
-<h2 align="center"><img src="docs/testing/w3c/w3c-css.jpg"></h2>
+<h2 align="left"><img src="docs/testing/w3c/w3c-css.jpg"></h2>
 
 ### Lighthouse
 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. 
@@ -120,21 +140,21 @@ Now only 1 possible improvement is detected by Chrome in Incognito mode. Source 
 index.html
 
 - [Desktop PDF report](docs/testing/lighthouse/lighthouse-index-desktop-2.pdf)
-<h2 align="center"><img src="docs/testing/lighthouse/lighthouse-index-desktop.jpg"></h2>
+<h2 align="left"><img src="docs/testing/lighthouse/lighthouse-index-desktop.jpg"></h2>
 
 - [Mobile PDF report](docs/testing/lighthouse/lighthouse-index-mobile-2.pdf)
-<h2 align="center"><img src="docs/testing/lighthouse/lighthouse-index-mobile.jpg"></h2>
+<h2 align="left"><img src="docs/testing/lighthouse/lighthouse-index-mobile.jpg"></h2>
 
 404.html
 
 The 404 page received a low score for accessibility because the page automatically directs the user back to the home page after 3 seconds. 
 
-I was not able use a 404 page with an active link for this MP2 repository and I believe it would require a custom domain as stated by Stack Overflow user [Daniel Powell](https://stackoverflow.com/questions/14908512/how-can-i-set-a-custom-404-page-on-github-pages).
+I was not able use a 404 page with an active link for this project repository and I believe it would require a custom domain as stated by Stack Overflow user [Daniel Powell](https://stackoverflow.com/questions/14908512/how-can-i-set-a-custom-404-page-on-github-pages).
 
-Github have published the procedure to [create a custom 404 page](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) for the Pages site username.github.io, but not for any repository. I was able to publish the 404 page with an active link for my own Pages site [janet-dev.github.io](https://janet-dev.github.io/), but not for this MP2 repository. The index.html link was unactive on deployment but not in Developer Tools and clicking on it would cause a redirection to janet-dev.github.io. Therefore I decided to build an automatic redirection from the 404 page to this repository's home page. As the MP2 site has only one short page, I believe this not be an accessibility issue. If the user is on the 404 page, then they clearly shouldn't be there and the one page they should be on is the home page. Automatic redirection is an issue for sites of many pages but not a small one-page site.
+Github have published the procedure to [create a custom 404 page](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) for the Pages site username.github.io, but not for any repository. I was able to publish the 404 page with an active link for my own Pages site [janet-dev.github.io](https://janet-dev.github.io/), but not for this MP2 repository. The index.html link was unactive on deployment but not in Developer Tools and clicking on it would cause a redirection to janet-dev.github.io. Therefore I decided to build an automatic redirection from the 404 page to this repository's home page. As the project site has only one short page, I believe this not be an accessibility issue. If the user is on the 404 page, then they clearly shouldn't be there and the one page they should be on is the home page. Automatic redirection is an issue for sites of many pages but not a small one-page site.
 
 - [Desktop PDF report](docs/testing/lighthouse/lighthouse-404-desktop.pdf)
-<h2 align="center"><img src="docs/testing/lighthouse/lighthouse-404.jpg"></h2>
+<h2 align="left"><img src="docs/testing/lighthouse/lighthouse-404.jpg"></h2>
 
 - [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf) : Same score as for desktop
 
@@ -145,14 +165,12 @@ app.js
 
 - No errors or warnings were detected.
 - [JavaScript PDF report](docs/testing/jshint/jshint-app.pdf)
-<h2 align="center"><img src="docs/testing/jshint/jshint-app.jpg"></h2>
+<h2 align="left"><img src="docs/testing/jshint/jshint-app.jpg"></h2>
 
 sendEmail.js
 
 - No errors, 2 warnings were detected - 1 undefined variable and 1 unused variable. Both are used in the index.html EmailJS code.
-<h2 align="center"><img src="docs/testing/jshint/jshint-sendemail.jpg"></h2>
-
-
+<h2 align="left"><img src="docs/testing/jshint/jshint-sendemail.jpg"></h2>
 
 ### Web Accessibility Evaluation
 [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/) "help authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content. Our philosophy is to focus on issues that we know impact end users, facilitate human evaluation, and to educate about web accessibility."
@@ -172,8 +190,21 @@ Initially, the WAVE detected:
     - a tag in the footer for the icon
 + [WAVE Report 1](docs/testing/wave/wave1-solved.jpg) : Errors Solved
 + [WAVE Report 2](docs/testing/wave/wave2-solved.jpg) : Errors Solved
-<h2 align="center"><img src="docs/testing/wave/wave.jpg"></h2>
+<h2 align="left"><img src="docs/testing/wave/wave.jpg"></h2>
 
+### Other Bugs
+1. Missing favicon
+<h2 align="left"><img src="docs/testing/bugs/bug-01-no-favicon.jpg"></h2>
+
+- Solved by creating a custom favicon on [favicon.cc](https://www.favicon.cc/).
+<h2 align="left"><img src="docs/testing/bugs/bug-01-solved.jpg"></h2>
+
+2. Grid width greater than body width
+<h2 align="left"><img src="docs/testing/bugs/bug-02-not-responsive.jpg"></h2>
+
+- Solved by following the guidelines outlayed in the article [Convert px to rem - An effective workflow](https://dev.to/swastikyadav/convert-px-to-rem-an-effective-workflow-4m4j) by Swastik Yadav on DEV Community. Basically, the root font is set in the HTML as 62.5% for 10px (100% = 16px). This sets 1rem as 10px and makes it easier to define responsive dimensions for the grid and tiles.
+<h2 align="left"><img src="docs/testing/bugs/bug-02-solved-1.jpg"></h2>
+<h2 align="left"><img src="docs/testing/bugs/bug-02-solved-2.jpg"></h2>
 
 ## Credits
 
