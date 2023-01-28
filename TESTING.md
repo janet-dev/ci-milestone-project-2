@@ -50,12 +50,6 @@ is added, the tests will fail.
 The tests above give a flavour of how automated testing can be achieved. The test results are seen below:
 <h2 align="left"><img src="docs/testing/jest/jest-tests.jpg"></h2>
 
-
-
-
-
-
-
 ## Manual Testing
 
 **The site was built, tested and validated on the [Chrome browser](docs/pictures/chrome.jpg) only.**
@@ -205,6 +199,66 @@ Initially, the WAVE detected:
 - Solved by following the guidelines outlayed in the article [Convert px to rem - An effective workflow](https://dev.to/swastikyadav/convert-px-to-rem-an-effective-workflow-4m4j) by Swastik Yadav on DEV Community. Basically, the root font is set in the HTML as 62.5% for 10px (100% = 16px). This sets 1rem as 10px and makes it easier to define responsive dimensions for the grid and tiles.
 <h2 align="left"><img src="docs/testing/bugs/bug-02-solved-1.jpg"></h2>
 <h2 align="left"><img src="docs/testing/bugs/bug-02-solved-2.jpg"></h2>
+
+### Known Bugs
+
+
+## Test Cases
+
+These cases are included in order to help the next developer understand the design of the site and how to extend it. They document the look and functionality of each page.
+
+#### Home Page
+Desktop/tablet/mobile screens:
+
+<h2 align="left"><img src="docs/pictures/home.jpg"></h2>
+
+**Site View**
+The following features of the site are visible to the user.
+
+* Game board
+<h2 align="left"><img src="docs/pictures/board.jpg"></h2>
+
+* Instructions - 
+<h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
+
+* Email - 
+<h2 align="left"><img src="docs/pictures/email.jpg"></h2>
+
+* Footer - 
+<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
+* Social media link for GitHub account accessed via the appropriate icon.
+
+**Site Actions**
+
+When the user selects an active area of the screen, the following results will be seen.
+
+Playing the game
+<h2 align="left"><img src="docs/pictures/game-play.jpg"></h2>
+
+- 'Start' button to start play, and a greyed-out 'Reset' button. On clicking 'Start':
+	- it will become inactive and greyed-out
+	- the moving target will be generated
+	- the score increments if target is hit and the time left counts down
+	- the 'Reset' button will be active 
+- On clicking 'Reset':
+	- it will become inactive and greyed-out
+	- the score returns to 0 and the time left to 60 seconds
+	- the target disappears
+	- the 'Start' button will be active
+
+Game over
+<h2 align="left"><img src="docs/pictures/game-over.jpg"></h2>
+
+Entering details
+<h2 align="left"><img src="docs/pictures/email-details.jpg"></h2>
+
+Email sent
+<h2 align="left"><img src="docs/pictures/email-sent.jpg"></h2>
+
+Email received
+<h2 align="left"><img src="docs/pictures/email-rx.jpg"></h2>
+
+#### 404 Page
 
 ## Credits
 

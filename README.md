@@ -63,11 +63,11 @@ As this is a brand new site with limited features, so the user stories were take
 
 This colour scheme was chosen for simplicity, readability and fun. The game was given a retro feel, which would appeal to adults and children alike. Inspiration was taken from palette number 4 [(Gentle Lilac)](https://blog.depositphotos.com/neon-color-palettes.html) of the blog post "30 Trendy Neon Color Palettes for Bold Designs" by Maria Sibirtseva.
 
-Game visuals were inspired by Sean Young's [Breakout Game](https://seanyoung247.github.io/breakout/).
-
 * Typography
     - For the site, [Raleway font](https://fonts.google.com/specimen/Raleway) is used for good readability and contrast when required. It is considered to be number eight in the [The 10 Best Google Fonts in 2023](https://kinsta.com/blog/best-google-fonts/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
 
+* Imagery
+	- Game visuals were inspired by Sean Young's [Breakout Game](https://seanyoung247.github.io/breakout/).
 
 ### Wireframes
 Mobile
@@ -92,12 +92,31 @@ There is no navigation as this is a small one-page site.
 
 This page will feature:
 - Coloured title, which tells the user the name of the game.
+- The 'Score' which will increment with each allowed hit on the coloured moving target.
+- The 'Time Left' in the current game. This counts down from 60 seconds on clicking the 'Start' button.
+- The game board of 9 tiles, one of which will initially have a randomly generated coloured target tile every 1 second. It will seem like the target is moving position every second, but time period between each random generation will decrease with each increase of the score - the target will speed up.
+- 'Start' button to start play and generate the moving target.
+- 'Reset' button to return the game back to it's initial start.
+- Instructions to how to play the game.
+- Contact area where users can email in their game idea.
+- Footer with a link to a GitHub account.
 
 * Game board - 
 <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
 
 Playing the game
 <h2 align="left"><img src="docs/pictures/game-play.jpg"></h2>
+
+- 'Start' button to start play, and a greyed-out 'Reset' button. On clicking 'Start':
+	- it will become inactive and greyed-out
+	- the moving target will be generated
+	- the score increments if target is hit and the time left counts down
+	- the 'Reset' button will be active 
+- On clicking 'Reset':
+	- it will become inactive and greyed-out
+	- the score returns to 0 and the time left to 60 seconds
+	- the target disappears
+	- the 'Start' button will be active
 
 Game over
 <h2 align="left"><img src="docs/pictures/game-over.jpg"></h2>
