@@ -52,16 +52,30 @@ app.js is the main game app, which:
 - speeds up the game depending on score
 - terminates, resets, starts the game
 
+#### Prerequisites Required
+
+Before running the tests, some modification is required to **index.html** and **app.js**:
+
+- comment out the EmailJS scripts in index.html
+
+<h2 align="left"><img src="docs/testing/jest/prereq-index.jpg"></h2>
+
+- uncomment this line in app.js
+
+<h2 align="left"><img src="docs/testing/jest/prereq-app.jpg"></h2>
+
+- See Bugs **4 and 5** in the **Bugs** section below for the explanation of why the prerequisites are required.
+
+#### Tests Generated
+
 It was decided to devise three tests:
 
 1. Check that the score and time-left, have the correct initial values on loading game and before the start of play. The elements of ids 'score' and 'time-left' are accessed and checked that their values, via text content, are '0' and '60' respectively.
 <h2 align="left"><img src="docs/testing/jest/jest-test-1.jpg"></h2>
 
-2. Check that the board grid has been built with correct ids. The board is made up of 9 tiles in a 3x3 grid. Each tile is is given a unique id between '0' and '8'. for this test set, all elements of the class 'tile' are accessed to check that there are actually 9 tiles and that they each have the expected id. Just to double check, if the code
+2. Check that the board grid has been built with correct ids. The board is made up of 9 tiles in a 3x3 grid. Each tile is is given a unique id between '0' and '8'. for this test set, all elements of the class 'tile' are accessed to check that there are actually 9 tiles and that they each have the expected id. Just to double check, if the following code is added, the tests will fail.
 
     `expect(squares[9].id).toEqual('9');`
-
-is added, the tests will fail.
 
 <h2 align="left"><img src="docs/testing/jest/jest-test-2.jpg"></h2>
 
@@ -257,8 +271,7 @@ The following browsers and devices were checked live and not through any emulato
 | [Edge](docs/testing/manual/about-msedg.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-msedg.jpg) | OK |
 | [Opera](docs/testing/manual/about-opera.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-opera.jpg) | OK |
 
-
-### Other Bugs
+### Bugs
 
 1. Missing favicon
 
@@ -268,7 +281,7 @@ The following browsers and devices were checked live and not through any emulato
 
 <h2 align="left"><img src="docs/testing/bugs/bug-01-solved.jpg"></h2>
 
-2. Grid width greater than body width
+2. Game non-responsive
 
 <h2 align="left"><img src="docs/testing/bugs/bug-02-not-responsive.jpg"></h2>
 
@@ -277,8 +290,47 @@ The following browsers and devices were checked live and not through any emulato
 <h2 align="left"><img src="docs/testing/bugs/bug-02-solved-1.jpg"></h2>
 <h2 align="left"><img src="docs/testing/bugs/bug-02-solved-2.jpg"></h2>
 
+3. Grid width greater than body width for Galaxy Fold mobile
+
+<h2 align="left"><img src="docs/testing/bugs/bug-03-grid-greater.jpg"></h2>
+
+- Solved by decreasing the grid and tile widths, so that they were within the limits of the page body
+
+<h2 align="left"><img src="docs/testing/bugs/bug-03-solved.jpg"></h2>
+
+4. During Jest testing, a non-failing console-error was seen inn the terminal
+
+<h2 align="left"><img src="docs/testing/bugs/bug-04-jest.jpg"></h2>
+
+- Solved by commenting out the EmailJS scripts in index.html
+
+<h2 align="left"><img src="docs/testing/bugs/bug-04-solved.jpg"></h2>
+
+5. During Jest testing, a console error was seen in Chrome Developer tools
+
+<h2 align="left"><img src="docs/testing/bugs/bug-05-jest.jpg"></h2>
+
+and a warning in JSHint
+
+<h2 align="left"><img src="docs/testing/bugs/bug-05-jshint.jpg"></h2>
+
+- Both solved by commenting out the EmailJS scripts in index.html
+
+<h2 align="left"><img src="docs/testing/bugs/bug-05-solved.jpg"></h2>
+
+6. Link to Home page on 404 page is inactive
+
+<h2 align="left"><img src="docs/testing/bugs/bug-06-404.jpg"></h2>
+
+- Solved by implementing in 404.html, an automatic redirect in 3 seconds, which gives enough time to read the message
+- See **404 Page** in **Lighthouse** section above for more information
+
+<h2 align="left"><img src="docs/testing/bugs/bug-06-solved.jpg"></h2>
+<h2 align="left"><img src="docs/testing/bugs/bug-06-solved2.jpg"></h2>
+
 ### Known Bugs
 
+See **Console Errors** section above. 
 
 ## Test Cases
 
@@ -314,7 +366,7 @@ When the user selects an active area of the screen, the following results will b
 <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
 
 Playing the game
-<h2 align="left"><img src="docs/pictures/game-play.jpg"></h2>
+<h2 align="left"><img src="docs/testing/manual/game-play.jpg"></h2>
 
 - 'Start' button to start play, and a greyed-out 'Reset' button. On clicking 'Start':
 	- it will become inactive and greyed-out
@@ -328,29 +380,26 @@ Playing the game
 	- the 'Start' button will be active
 
 Game over
-<h2 align="left"><img src="docs/pictures/game-over.jpg"></h2>
-
-* Instructions - 
-<h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
+<h2 align="left"><img src="docs/testing/manual/game-over.jpg"></h2>
 
 * Email - 
 <h2 align="left"><img src="docs/pictures/email.jpg"></h2>
 
 Entering details
-<h2 align="left"><img src="docs/pictures/email-details.jpg"></h2>
+<h2 align="left"><img src="docs/testing/manual/email-details.jpg"></h2>
 
 Email sent
-<h2 align="left"><img src="docs/pictures/email-sent.jpg"></h2>
+<h2 align="left"><img src="docs/testing/manual/email-sent.jpg"></h2>
 
 Email received
-<h2 align="left"><img src="docs/pictures/email-rx.jpg"></h2>
+<h2 align="left"><img src="docs/testing/manual/email-rx.jpg"></h2>
 
 * Footer - 
 <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
 * Social media link for GitHub account accessed via the appropriate icon.
 
-
 #### 404 Page
+
 
 ## Credits
 
