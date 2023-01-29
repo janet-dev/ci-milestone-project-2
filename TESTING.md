@@ -240,7 +240,18 @@ Initially, the WAVE detected:
 
 ### Further Testing
 
-Testing and validation was carried out on the Chrome browser, though the site was viewed through others (including [Microsoft Edge](docs/pictures/edge.jpg)) to check the functionality of the site remained the same.
+Testing and validation was carried out on the Chrome browser with Windows 10, though the site was used through others to check continuing functionality. The following browsers and devices were checked live and not through any emulators - select the coloured text to see the screenshots:
+
+| Browser       | OS             | Device        | Result        |
+| ------------- | -------------- | ------------- | ------------- |
+| [Chrome](docs/testing/manual/about-honor-chrome.jpg) | [Android 9.1](docs/testing/manual/about-honor.jpg) | [Honor 9 Lite](docs/testing/manual/brows-honor.jpg) | OK |
+| Safari 16 | [iOS 16.2](docs/testing/manual/about-ios16.jpg) | [iPhone 8](docs/testing/manual/brows-iphon.png) | OK | 
+| [Safari](docs/testing/manual/about-safar.png) | [macOS 15.15](docs/testing/manual/about-macos.png) | [MacBook Pro](docs/testing/manual/brows-macbk.png) | OK | 
+| [Brave](docs/testing/manual/about-brave.jpg) | [Windows 10](docs/testing/manual/about-win10.jpg) | [Desktop](docs/testing/manual/brows-brave.jpg) | OK |
+| [Chrome](docs/testing/manual/about-chrom.jpg) | Windows 10 | [Desktop](docs/testing/manual/brows-chrom.jpg) | OK |
+| [Edge](docs/testing/manual/about-msedg.jpg) | Windows 10 | [Desktop](docs/testing/manual/brows-msedg.jpg) | OK |
+| [Opera](docs/testing/manual/about-opera.jpg) | Windows 10 | [Desktop](docs/testing/manual/brows-opera.jpg) | OK |
+
 
 ### Other Bugs
 
