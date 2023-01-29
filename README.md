@@ -1,5 +1,4 @@
 
-
 ## Project Purpose
 This is a Code Institute student project for Milestone 2, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma). 
 
@@ -25,7 +24,7 @@ The site also enhances the owner's goals by:
 * This project is deployed via GitHub Pages and the code in a GitHub repository.
 
 
-<h1 align="center">2D Retro Game: Box Hunt</h1>
+<h1 align="left">2D Retro Game: Box Hunt</h1>
 
 [View the live project here.](https://janet-dev.github.io/ci-milestone-project-2/)
 
@@ -33,7 +32,8 @@ The aim of the project is provide an easy to play game for most ages and to prov
 
 The site is designed to be responsive and accessible on a range of devices, making it easy to use for potential users.
 
-<h2 align="center"><img src="docs/pictures/whacamole.jpg"></h2>
+<h2 align="left"><img src="docs/pictures/whacamole.jpg"></h2>
+
 
 ## User Experience (UX)
 
@@ -59,7 +59,7 @@ As this is a brand new site with limited features, so the user stories were take
 	- Persian rose (#fe2da3) for other headings.
 	- Lavender floral (#a381ce) for the footer icons.
 
-<h2 align="center"><img src="docs/ux/palette.jpg"></h2>
+<h2 align="left"><img src="docs/ux/palette.jpg"></h2>
 
 This colour scheme was chosen for simplicity, readability and fun. The game was given a retro feel, which would appeal to adults and children alike. Inspiration was taken from palette number 4 [(Gentle Lilac)](https://blog.depositphotos.com/neon-color-palettes.html) of the blog post "30 Trendy Neon Color Palettes for Bold Designs" by Maria Sibirtseva.
 
@@ -70,84 +70,64 @@ This colour scheme was chosen for simplicity, readability and fun. The game was 
 	- Game visuals were inspired by Sean Young's [Breakout Game](https://seanyoung247.github.io/breakout/).
 
 ### Wireframes
+
 Mobile
-<h2 align="center"><img src="docs/ux/mobile.jpg"></h2>
+<h2 align="left"><img src="docs/ux/mobile.jpg"></h2>
 
 Tablet
-<h2 align="center"><img src="docs/ux/tablet.jpg"></h2>
+<h2 align="left"><img src="docs/ux/tablet.jpg"></h2>
 
 Desktop
-<h2 align="center"><img src="docs/ux/desktop.jpg"></h2>
+<h2 align="left"><img src="docs/ux/desktop.jpg"></h2>
+
 
 ## Features
 This website consists of one page containing the game area, instructions and contact form. It was decided to produce the game on a black background as the gave a more polished look to the product and looked much better on mobile devices. The site will look the same on all devices.
 
-<h2 align="center"><img src="docs/ux/devices.jpg"></h2>
+<h2 align="left"><img src="docs/ux/devices.jpg"></h2>
 
 ### Navigation
+
 There is no navigation as this is a small one-page site.
 
 ### Home Page
+
 <h2 align="left"><img src="docs/pictures/home.jpg"></h2>
 
-This page will feature:
-- Coloured title, which tells the user the name of the game.
-- The 'Score' which will increment with each allowed hit on the coloured moving target.
-- The 'Time Left' in the current game. This counts down from 60 seconds on clicking the 'Start' button.
-- The game board of 9 tiles, one of which will initially have a randomly generated coloured target tile every 1 second. It will seem like the target is moving position every second, but time period between each random generation will decrease with each increase of the score - the target will speed up.
-- 'Start' button to start play and generate the moving target.
-- 'Reset' button to return the game back to it's initial start.
-- Instructions to how to play the game.
-- Contact area where users can email in their game idea.
-- Footer with a link to a GitHub account.
+This page features:
 
-* Game board - 
-<h2 align="left"><img src="docs/pictures/board.jpg"></h2>
-
-Playing the game
-<h2 align="left"><img src="docs/pictures/game-play.jpg"></h2>
-
-- 'Start' button to start play, and a greyed-out 'Reset' button. On clicking 'Start':
-	- it will become inactive and greyed-out
-	- the moving target will be generated
-	- the score increments if target is hit and the time left counts down
-	- the 'Reset' button will be active 
-- On clicking 'Reset':
-	- it will become inactive and greyed-out
-	- the score returns to 0 and the time left to 60 seconds
-	- the target disappears
-	- the 'Start' button will be active
-
-Game over
-<h2 align="left"><img src="docs/pictures/game-over.jpg"></h2>
-
-* Instructions - 
-<h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
-
-* Email - 
-<h2 align="left"><img src="docs/pictures/email.jpg"></h2>
-
-Entering details
-<h2 align="left"><img src="docs/pictures/email-details.jpg"></h2>
-
-Email sent
-<h2 align="left"><img src="docs/pictures/email-sent.jpg"></h2>
-
-Email received
-<h2 align="left"><img src="docs/pictures/email-rx.jpg"></h2>
-
-* Footer - 
-<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
-* Social media link for GitHub account accessed via the appropriate icon.
+- a coloured title, which tells the user the name of the game
+- the 'Score' which will increment with each allowed hit on the coloured moving target
+- the 'Time Left' in the current game, which counts down from 60 seconds on clicking the 'Start' button
+- the game board of 9 tiles, one of which will initially have a randomly generated coloured target tile every 1 second. It will seem like the target is moving position every second, but time period between each random generation will decrease with each increase of the score - the target will speed up
+- 'Start' button to start play and generate the moving target
+- 'Reset' button to return the game back to it's initial start
+- 'Instructions' to how to play the game
+- contact area where users can email in their game idea
+- footer with a link to a GitHub account
 
 ### 404 Page
+
 <h2 align="left"><img src="docs/pictures/page-404.jpg"></h2>
 
+As this is a one-page site, there is an automatic redirect back to the home page from the 404 page.
+
+
 ## Future Features
+
 After asking the advice of other gamers and developers, further features are required:
 * show highest score attained so far by using **localStorage**
 	- [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-* remove points when the user misses the target
+
+* create an higher level where points are deducted when the user hits a black tile
+
+* create higher levels where the number of tiles increases, for example:
+	- 4x4 grid = 16 tiles
+	- 5x5 grid = 25 tiles
+	- 6x6 grid = 36 tiles
+
+* make the game for 2 players, by generating 2 different coloured tiles with separate scoring
+
 
 ## Technology Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
@@ -173,9 +153,11 @@ After asking the advice of other gamers and developers, further features are req
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
 * Web Accessibility Evaluation Tools by [WAVE](https://wave.webaim.org/)
 
+
 ## Testing
 
 See the document [TESTING.md](TESTING.md) for the code validation, automated and manual tests.
+
 
 ## Deployment
 
@@ -242,6 +224,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+
 ## Credits
 
 A huge thank you to the following people and organisations, because without you, the website would not have been produced in it's present form.
@@ -279,6 +262,7 @@ Many of the references have been embedded as links throughout this document and 
 [Creating a custom 404 page for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) by GitHub Docs
 
 [Custom redirects are not supported](https://til.simonwillison.net/github/github-pages) by Simon Willison
+
 
 ## Acknowledgements
 
