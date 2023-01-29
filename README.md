@@ -1,5 +1,6 @@
 
 ## Project Purpose
+
 This is a Code Institute student project for Milestone 2, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma). 
 
 This project has been created in order to provide 2D gaming entertainment on a deployed interactive website. The project was built using **Gitpod**. 
@@ -16,6 +17,7 @@ The site also enhances the owner's goals by:
 
 
 ## Project Requirements
+
 * The technologies used were HTML, CSS and **JavaScript**.
 * This interactive front end project contains one page with a JavaScript game and an email form for contacting us
 * This README.md file explains what the project does and the value it provides for the users
@@ -38,6 +40,7 @@ The site is designed to be responsive and accessible on a range of devices, maki
 ## User Experience (UX)
 
 ### User stories
+
 As this is a brand new site with limited features, so the user stories were taken from the perspective of the visiting or anonymous user. We don't have any traffic data yet and we don't really know who are users are at this point.
 * As a visiting user, I would like to connect with the company via email.
 * As a visiting user, I would like to easily understand how to play the game.
@@ -45,11 +48,13 @@ As this is a brand new site with limited features, so the user stories were take
 * As a visiting user, I would like to see my score.
 
 ### Owner goals
+
 * I would like to build a retro 2D game.
 * I would like to build a family game which is easy for both children and adults to use.
 * I would like the game to be visually attractive and fun to play.
 
 ### Design
+
 * The Game
 	- This game is inspired by the mini course [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by **Ania Kubow** on freeCodeCamp. In particular, the tutorial [Whac-a-mole](https://www.youtube.com/watch?v=ec8vSKJuZTk) starting at time 1:04:37.
 
@@ -82,6 +87,7 @@ Desktop
 
 
 ## Features
+
 This website consists of one page containing the game area, instructions and contact form. It was decided to produce the game on a black background as the gave a more polished look to the product and looked much better on mobile devices. The site will look the same on all devices.
 
 <h2 align="left"><img src="docs/ux/devices.jpg"></h2>
@@ -130,6 +136,7 @@ After asking the advice of other gamers and developers, further features are req
 
 
 ## Technology Used
+
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
 * Wireframes from [Balsamiq](https://balsamiq.com/).
 * Developer platform from [Gitpod](https://www.gitpod.io/).
@@ -245,6 +252,7 @@ Girl playing Whac-A-Mole by [sa_ku_ra / sakura](https://www.flickr.com/photos/sa
 Wallpaper for 404 page from [Maxim Berg](https://unsplash.com/@maxberg) on Unsplash
 
 ### Code
+
 Although the code is the work of the author, some of the code has been sourced from or inspired by others.
 
 Many of the references have been embedded as links throughout this document and indicated by the active blue text links.
