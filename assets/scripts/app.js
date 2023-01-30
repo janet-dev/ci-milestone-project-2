@@ -145,10 +145,5 @@ document.addEventListener('DOMContentLoaded', () => {
         start.disabled = true;
         reset.disabled = false;
     }
-
-    // END of file - place module exports here
-    // remember to import these into app.test.js
-    //module.exports = { game, createGrid, startGame }; // Uncomment when running Jest tests
-
 });
 

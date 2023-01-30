@@ -60,7 +60,9 @@ Before running the tests, some modification is required to **index.html** and **
 
 <h2 align="left"><img src="docs/testing/jest/prereq-index.jpg"></h2>
 
-- uncomment this line in app.js
+- add the following line to bottom of app.js
+
+`module.exports = { game, createGrid, startGame };`
 
 <h2 align="left"><img src="docs/testing/jest/prereq-app.jpg"></h2>
 
@@ -314,7 +316,7 @@ and a warning in JSHint
 
 <h2 align="left"><img src="docs/testing/bugs/bug-05-jshint.jpg"></h2>
 
-- Both solved by commenting out the EmailJS scripts in index.html
+- Both solved by deleting the highlighted line below:
 
 <h2 align="left"><img src="docs/testing/bugs/bug-05-solved.jpg"></h2>
 
