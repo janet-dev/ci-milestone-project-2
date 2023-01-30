@@ -345,20 +345,44 @@ Desktop/tablet/mobile screens:
 <h2 align="left"><img src="docs/pictures/home.jpg"></h2>
 
 **Site View**
-The following features of the site are visible to the user.
 
-* Game board
+Colour palette used on a Black background:
+
+<h2 align="left"><img src="docs/ux/palette.jpg"></h2>
+
+On loading the site, the following features are visible to the user.
+
+* Game board with 
+    - name of the game title **Box Hunt** in Electric Blue
+    - initial values for **Score: 0** and **Time Left: 60s**. Words are in White and numbers in Persian Rose
+    - 3x3 Black game board with White grid lines
+    - active **Start** button (default HTML button without any extra styling)
+    - inactive **Reset** button (default greyed-out HTML button without any extra styling)
+
 <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
 
-* Instructions - 
+* Instructions of how to play the game and how points are accrued
+    - **Instructions** heading in Persian Rose
+    - list of instructions featuring an Electric Blue icon and White text
+
 <h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
 
-* Email - 
+* Contact section where the user can email in a game idea, featuring:
+    - **Email Us** heading in Persian Rose
+    - name input box with **Full Name** placeholder text
+    - email address input box with **Email** placeholder text
+    - text area with **Game Idea** placeholder text
+    - **Send My Idea** button (default HTML button without any extra styling)
+
 <h2 align="left"><img src="docs/pictures/email.jpg"></h2>
 
-* Footer - 
+* Footer section with
+    - White text
+    - **heart** icon in Lavender Floral
+    - Lavender Floral **GitHub** icon with an active link (default HTML linking without any extra styling)
+
 <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
-* Social media link for GitHub account accessed via the appropriate icon.
+
 
 **Site Actions**
 
