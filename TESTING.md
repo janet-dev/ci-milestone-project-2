@@ -92,7 +92,7 @@ The tests above give a flavour of how automated testing can be achieved. The tes
 
 ## Manual Testing
 
-**The site was built, tested and validated on the [Chrome browser](docs/pictures/chrome.jpg) only.**
+**The site was built, tested and validated on the [Chrome browser](docs/testing/manual/about-chrom.jpg) only.**
 
 ### Supported Screen Sizes and Browsers
 
