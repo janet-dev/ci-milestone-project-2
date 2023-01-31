@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function removeTarget() {
-            // remove event listener and ability to restart game by random clicking on grid
-            tiles.forEach(tile => {
+        // remove event listener and ability to restart game by random clicking on grid
+        tiles.forEach(tile => {
             tile.classList.remove('target');
             hitPosition = null;
             tile.removeEventListener('click', isTargetHit);

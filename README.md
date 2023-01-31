@@ -55,24 +55,81 @@ As this is a brand new site with limited features, so the user stories were take
 
 ### Design
 
-* The Game
-	- This game is inspired by the mini course [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by **Ania Kubow** on freeCodeCamp. In particular, the tutorial [Whac-a-mole](https://www.youtube.com/watch?v=ec8vSKJuZTk) starting at time 1:04:37.
+#### The Game
 
-* Colour Scheme
-    - White (#ffffff) grid on a black (#000000) background are used for the game board.
-    - Electric blue (#04eeff) for the moving target, main h1 heading and icons.
-	- Persian rose (#fe2da3) for other headings.
-	- Lavender floral (#a381ce) for the footer icons.
+- This game is inspired by the mini course [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by **Ania Kubow** on freeCodeCamp. In particular, the tutorial [Whac-a-mole](https://www.youtube.com/watch?v=ec8vSKJuZTk) starting at time 1:04:37.
+
+- View the game design flowchart [here](docs/ux/game-flowchart.pdf), to see how the functions are connected. These functions are:
+
+1. createGrid() - 3x3 grid of 9 tiles was created using JavaScript. In order to create each tile:
+	- a 'div' with the class of 'tile' was generated
+	- tile was given a unique id between 0 and 8
+	- the tile was appended to the grid
+
+2. startGame() - on selecting the start button, 
+	- game defaults were set
+		- score = 0
+		- time left = 60 seconds
+		- start button was disabled
+		- reset button was enabled
+	- the countdown timer interval was set to 1 second, i.e. the time left decremented every second from 60 seconds.
+	- the random target generation interval for creating the target was set initially at 1 second. This gave the appearance of a target being generated every second.
+	- isTargetHit() function called to check if target was hit.
+
+3. countDown() - throughout the game, the time left counts down every second until 0 is reached. When 0 is reached, the game ends by calling the gameOver() function.
+
+4. randomTarget() - this function creates the random target: 
+	- firstly removes any target generated, by removing the associated class of 'target' from the tile
+	- generates a random integer between 0 and 8
+	- assigns the tile with the id equal to this random integer, as the new target by giving it the class of 'target'
+	- a potential hit postion is now assigned to the target tile
+
+5. isTargetHit() - this function checks if the target has been clicked on by a mouse or touched via a touchscreen:
+	- add an event listener for 'click' - this checks for either mouse or touch selection
+	- checks if tile selected is the correct hit position of the target. If yes:
+		- the random target generation interval is cleared
+		- the score is incremented and displayed on the screen
+		- the hit position is cleared to stop multiple successful hits on the one position (thought it is possible to randomly generate the same number twice)
+		- a new random target generation interval, less than the previous one is assigned - this gives the effect of a faster moving target
+	- if the target has not been hit, the score and the random target generation interval stay the same i.e. the target will keep moving at the current speed
+
+6. resetGame() - on selecting the reset button:
+	- all intervals are cleared -  the game stops running
+	- screen displays for score and time left are set back to 0 and 60 seconds respectively
+	- the removeTarget() function is called 
+	- start button is enabled
+	- reset button is disabled
+
+7. gameOver() - is called when the time left is 0
+	- 'Game Over!' text is generated
+	- removetarget() function is called
+	- start button is disabled
+	- reset button is enabled, in order to force the user to reset the game before replaying
+
+8. removeTarget() - removes the event listener and ability to restart the game by randomly clicking on the grid by:
+	- removing the class of 'target' from any tile
+	- making sure any potential hit position is cleared
+	- removing the event listener, so that clicking on the grid results on no action
+
+#### Colour Scheme
+
+- White (#ffffff) grid on a black (#000000) background are used for the game board.
+- Electric blue (#04eeff) for the moving target, main h1 heading and icons.
+- Persian rose (#fe2da3) for other headings.
+- Lavender floral (#a381ce) for the footer icons.
 
 <h2 align="left"><img src="docs/ux/palette.jpg"></h2>
 
 This colour scheme was chosen for simplicity, readability and fun. The game was given a retro feel, which would appeal to adults and children alike. Inspiration was taken from palette number 4 [(Gentle Lilac)](https://blog.depositphotos.com/neon-color-palettes.html) of the blog post "30 Trendy Neon Color Palettes for Bold Designs" by Maria Sibirtseva.
 
-* Typography
-    - For the site, [Raleway font](https://fonts.google.com/specimen/Raleway) is used for good readability and contrast when required. It is considered to be number eight in the [The 10 Best Google Fonts in 2023](https://kinsta.com/blog/best-google-fonts/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
+#### Typography
 
-* Imagery
-	- Game visuals were inspired by Sean Young's [Breakout Game](https://seanyoung247.github.io/breakout/).
+For the site, [Raleway font](https://fonts.google.com/specimen/Raleway) is used for good readability and contrast when required. It is considered to be number eight in the [The 10 Best Google Fonts in 2023](https://kinsta.com/blog/best-google-fonts/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
+
+#### Imagery
+
+Game visuals were inspired by Sean Young's [Breakout Game](https://seanyoung247.github.io/breakout/).
+
 
 ### Wireframes
 
