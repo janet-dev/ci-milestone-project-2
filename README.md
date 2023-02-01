@@ -332,6 +332,8 @@ Many of the references have been embedded as links throughout this document and 
 
 [Sending Emails Using EmailJS](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/tree/master/03-SendingEmailsUsingEmailJS/06-sending_emails) tutorial by Code Institute
 
+[How to Change the Time Interval of setinterval() Method at RunTime using JavaScript ?](https://www.geeksforgeeks.org/how-to-change-the-time-interval-of-setinterval-method-at-runtime-using-javascript/) on Geeks for Geeks
+
 [Creating a custom 404 page for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) by GitHub Docs
 
 [Custom redirects are not supported](https://til.simonwillison.net/github/github-pages) by Simon Willison
