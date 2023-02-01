@@ -59,6 +59,10 @@ As this is a brand new site with limited features, so the user stories were take
 
 - This game is inspired by the mini course [Learn JavaScript by building 7 games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/) by **Ania Kubow** on freeCodeCamp. In particular, the tutorial [Whac-a-mole](https://www.youtube.com/watch?v=ec8vSKJuZTk) starting at time 1:04:37.
 
+- What is this game? In the original arcade game of [Whac-A-Mole](https://en.wikipedia.org/wiki/File:Whac-a-mole_-_Tokyo_-_Jan_7_2020.webm), the player tries to hit the 'moles' which pop up through various holes in a cabinet top. Points are scored depending on how fast the 'moles' can be hit. The game starts out slow enough for most people to hit the 'moles', but eventually speeds up with them popping up for shorter periods. In this 2D version of the game, the 'moles' are replaced by coloured square targets, randomly generated within a 3x3 grid. Points are scored by clicking or touching the target, but the player can only score a maximum of one point per appearance. The game currently increases in difficulty, by moving faster as the user gains more points.
+
+- Why this game? This game was developed for anyone who just wanted a few moments of escapism or to get out of their current head-space. A minimalistic design with bright colours was developed to make it fun but not overly cluttered or busy. The game design lends it to be easily scaled up or down depending on the device screen size. This 60 second version is just short enough to play whilst waiting in a queue, or to pass between a group of players for some friendly competition.
+
 - View the game design flowchart [here](docs/ux/game-flowchart.pdf), to see how the functions are connected. These functions are:
 
 1. **createGrid()** - 3x3 grid of 9 tiles was created using JavaScript. In order to create each tile:
@@ -191,10 +195,14 @@ After asking the advice of other gamers and developers, further features are req
 
 * make the game for 2 players, by generating 2 different coloured tiles with separate scoring
 
+* develop an accessible level for those who require a larger game board with slower moving targets, by maximising the grid size for larger tablets and desktops
+
 
 ## Technology Used
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
+* [JavaScript](https://www.w3schools.com/js/js_history.asp) which is used to make the web pages interactive.
+* [EmailJS](https://www.emailjs.com/) provides the JavaScript library for sending emails without the need for server-side technology.
 * Wireframes from [Balsamiq](https://balsamiq.com/).
 * Developer platform from [Gitpod](https://www.gitpod.io/).
 * IDE integrated into Gitpod from [Visual Studio Code](https://code.visualstudio.com/).
