@@ -21,6 +21,17 @@ By the end, a suite of tests can be run for the whole JavaScript app, just by ty
 
 This is how Jest can be used for TDD and automated testing.
 
+### Advantages of Automated Testing
+
+- Many tests can be run during a short period of time.
+- Tests, if written by the programmer, can detect errors earlier.
+- Tests can be very specific and edge cases accounted for.
+
+### Disadvantages of Automated Testing
+
+- The tests are only as good as the questions asked. Care has to be taken, as 'always passing' tests are possible to write.
+- The tests only check the programming function and do not test the user experience. Manual testing is also carried out in parallel to cover this.
+
 ### Installing Jest
 
 Jest is based on a system called Node.JS. There are thousands of extra packages that can be installed to extend the basic functionality of Node. These are installed using the Node Package Manager (NPM).
@@ -131,10 +142,11 @@ For this project it was only deemed necessary to use 2 breakpoints:
 
     - For all other devices, the font was scaled up as appropriate. It was not necessary to fully scale up for laptops and desktops, as this would have made the game board rather large and the game play too easy. As an extra future feature, a fully scaled up version could be built for those requiring an extra large game board.
 
+
 ### Testing Against User Stories
 
 * As a visiting user, I would like to connect with the company via email.
-    - The emailing feature is provided by the JavaScript library, [EmailJS](https://www.emailjs.com/). This service allows you to connect your email service, in this case Gmail, build an email template, and send it from JavaScript without any server code.
+    - The emailing feature is provided by the JavaScript library, [EmailJS](https://www.emailjs.com/). This service allows connection to a chosen email service (in this case Gmail), build an email template, and send it from JavaScript without any server code.
 
 <h2 align="left"><img src="docs/testing/stories/email.jpg"></h2>
 
@@ -171,6 +183,7 @@ Google Forum user [Adrià Vilanova Martínez](https://support.google.com/chrome/
 
 Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js - EmailJS
 
+
 ### W3C Validation
 
 * HTML - No errors and 2 warnings were detected by [W3C](https://validator.w3.org/#validate_by_input) for pages:
@@ -188,6 +201,7 @@ Now only 1 possible improvement is detected by Chrome in Incognito mode. Source 
     - [style.css PDF report](docs/testing/w3c/w3c-css.pdf)
 
 <h2 align="left"><img src="docs/testing/w3c/w3c-css.jpg"></h2>
+
 
 ### Lighthouse
 
@@ -215,6 +229,7 @@ Github have published the procedure to [create a custom 404 page](https://docs.g
 
 - [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf) : Same score as for desktop
 
+
 ### JSHint
 
 [JSHint](https://jshint.com/) is a community-driven tool that detects errors and potential problems in JavaScript code.
@@ -231,6 +246,7 @@ sendEmail.js
 - No errors, 2 warnings were detected - 1 undefined variable and 1 unused variable. Both are used in the index.html EmailJS code.
 
 <h2 align="left"><img src="docs/testing/jshint/jshint-sendemail.jpg"></h2>
+
 
 ### Web Accessibility Evaluation
 
@@ -254,6 +270,7 @@ Initially, the WAVE detected:
 
 <h2 align="left"><img src="docs/testing/wave/wave.jpg"></h2>
 
+
 ### Further Testing
 
 Testing and validation was carried out on the Chrome browser with Windows 10, though the site was used through others to check continuing functionality. Checked that:
@@ -272,6 +289,7 @@ The following browsers and devices were checked live and not through any emulato
 | [Chrome](docs/testing/manual/about-chrom.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-win10.jpg) | OK |
 | [Edge](docs/testing/manual/about-msedg.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-msedg.jpg) | OK |
 | [Opera](docs/testing/manual/about-opera.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-opera.jpg) | OK |
+
 
 ### Bugs
 
@@ -330,13 +348,32 @@ and a warning in JSHint
 <h2 align="left"><img src="docs/testing/bugs/bug-06-solved.jpg"></h2>
 <h2 align="left"><img src="docs/testing/bugs/bug-06-solved2.jpg"></h2>
 
+
 ### Known Bugs
 
 See **Console Errors** section above. 
 
+
 ## Test Cases
 
+### Behavioural Driven Development
+
+Behavioural Driven Development (BDD) is manual testing and is based on the expected outcome of an action. No specific software tool is used and it is built upon the user stories. The application is tested to see if it behaves as expected. It is a descriptive way of testing. For example: 
+
+- as a user (role)
+- I want an email feature (feature)
+- so that I can contact the developer about my game idea (benefit)
+
+As a role, I want a particular feature, so that I get a benefit. BDD expands on this by adding **given, when, then**:
+
+- given a specific context: the user has filled in their details on the contact form
+- when an action is performed: user clicks 'Send Email' button
+- then there is an observable consequence: site owner receives an email from the user
+
+This behaviour is now testable and repeatable. Each test should only one thing at a time.
+
 These cases are included in order to help the next developer understand the design of the site and how to extend it. They document the look and functionality of each page.
+
 
 ### Home Page
 
@@ -426,6 +463,15 @@ Email received
 
 #### 404 Page
 
+Desktop/tablet/mobile screens:
+
+<h2 align="left"><img src="docs/pictures/page-404.jpg"></h2>
+
+**Site View**
+
+On arriving at this page, the following features are visible to the user:
+
+
 
 ## Credits
 
@@ -434,6 +480,8 @@ A huge thank you to the following people and organisations, because without you,
 ### From the Course
 
 Jest Testing Walkthrough Tutorials from [Code Institute](https://github.com/Code-Institute-Solutions/Jest_Testing_Part2/blob/main/09_Final_Codealong_2/scripts/tests/game.test.js)
+
+Red-Green-Refactor Cycle diagram from Code Institute tutorial.
 
 Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)
 
