@@ -143,6 +143,23 @@ For this project it was only deemed necessary to use 2 breakpoints:
     - For all other devices, the font was scaled up as appropriate. It was not necessary to fully scale up for laptops and desktops, as this would have made the game board rather large and the game play too easy. As an extra future feature, a fully scaled up version could be built for those requiring an extra large game board.
 
 
+### Behavioural Driven Development
+
+Behavioural Driven Development (BDD) is manual testing and is based on the expected outcome of an action. No specific software tool is used and it is built upon the user stories. The application is tested to see if it behaves as expected. It is a descriptive way of testing. For example: 
+
+- as a user (role)
+- I want an email feature (feature)
+- so that I can contact the developer about my game idea (benefit)
+
+As a role, I want a particular feature, so that I get a benefit. BDD expands on this by adding **given, when, then**:
+
+- given a specific context: the user has filled in their details on the contact form
+- when an action is performed: user clicks *Send Email* button
+- then there is an observable consequence: site owner receives an email from the user
+
+This behaviour is now testable and repeatable. Each test should only one thing at a time.
+
+
 ### Testing Against User Stories
 
 * As a visiting user, I would like to connect with the company via email.
@@ -164,24 +181,139 @@ For this project it was only deemed necessary to use 2 breakpoints:
 
 <h2 align="left"><img src="docs/testing/stories/game-play.jpg"></h2>
 
-### Console Errors
 
-<h2 align="left"><img src="docs/testing/console/console.jpg"></h2>
+### Test Cases
 
-1 error, 1 warning and 1 possible improvement were detected.
+These cases are included in order to help the next developer understand the design of the site and how to extend it. They document the look and functionality of each page.
 
-* The error was removed by running the site on Chrome in Incognito mode.
-Stack Overflow user [Chrostip Schaejn](https://stackoverflow.com/questions/72494154/a-listener-indicated-an-asynchronous-response-by-returning-true-but-the-messag) advised that this error was cause by various Chrome extensions.
+#### Home Page
 
-* The warning was also absent from Chrome in Incognito mode
-Stack Overflow user [Takash Futada](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) advised that "GitHub hosted pages disable FLoC, which is Google's 3rd party cookie alternative. GitHub, Microsoft, doesn't seems to like it."
+Desktop/tablet/mobile screens:
 
-* The possible improvement was still present
-Google Forum user [Adrià Vilanova Martínez](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) advised that "this only means that Chrome will provide less details about the user platform and Chrome version, since these are used by websites to fingerprint users."
+<h2 align="left"><img src="docs/pictures/home.jpg"></h2>
 
-<h2 align="left"><img src="docs/testing/console/incognito.jpg"></h2>
+**Site View**
 
-Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js - EmailJS
+Colour palette used on a Black background:
+
+<h2 align="left"><img src="docs/ux/palette.jpg"></h2>
+
+On loading the site, the user will be taken to index.html, the home page. Mobile, tablet and desktop views are the same, and the following features are visible to the user.
+
+* Game board with: 
+    - name of the game title *Box Hunt* in Electric Blue
+    - initial values for *Score: 0* and *Time Left: 60s*. Words are in White and numbers in Persian Rose
+    - 3x3 Black game board with White grid lines
+    - active *Start* button (default HTML button without any extra styling)
+    - inactive *Reset* button (default greyed-out HTML button without any extra styling)
+
+<h2 align="left"><img src="docs/pictures/board.jpg"></h2>
+
+* Instructions of how to play the game and how points are accrued
+    - *Instructions* heading in Persian Rose
+    - list of instructions featuring an Electric Blue icon and White text
+
+<h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
+
+* Contact section where the user can email in a game idea, featuring:
+    - *Email Us* heading in Persian Rose
+    - name input box with *Full Name* placeholder text
+    - email address input box with *Email* placeholder text
+    - text area with *Game Idea* placeholder text
+    - *Send My Idea* button (default HTML button without any extra styling)
+
+<h2 align="left"><img src="docs/pictures/email.jpg"></h2>
+
+* Footer section with
+    - White text
+    - *heart* icon in Lavender Floral
+    - Lavender Floral *GitHub* icon with an active link (default HTML linking without any extra styling)
+
+<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
+
+**Site Actions**
+
+When the user selects an active area of the screen, the following results will be seen.
+
+* On the game area:
+
+    <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
+
+    1. Clicking or tapping on the *Start* button will
+        - cause the *Time left* value to count down from 60 seconds
+        - cause a randomly generated Electric Blue square target to appear, initially every 1 second 
+        - change the *Start* button fill colour from White to Grey
+        - change the *Reset* button fill colour from Grey to White
+
+    2. Clicking or tapping on the Electric Blue moving target will
+        - cause the *Score* to increment
+        - cause the target to speed up slightly
+        <h2 align="left"><img src="docs/testing/manual/game-play.jpg"></h2>
+
+    3. Given that the game is in play, when the *Time left* value is 0, then 
+        - the Electric Blue text *Game Over!* will appear
+        - the target will be removed
+
+    <h2 align="left"><img src="docs/testing/manual/game-over.jpg"></h2>
+
+    4. Clicking or tapping on the *Reset* button will
+        - remove the target if present
+        - change the *Score* value to 0
+        - change the *Time left* value to 60
+        - change the *Reset* button fill colour from White to Grey
+        - change the *Start* button fill colour from Grey to White
+        - remove the *Game Over!* text above the grid, if the *Time left* value is 0
+
+    <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
+
+* On the *Email Us* form section: 
+
+    <h2 align="left"><img src="docs/pictures/email.jpg"></h2>
+
+    1. Clicking or tapping on the input text boxes will:
+		- show an extra outer border in White
+
+        <h2 align="left"><img src="docs/testing/manual/email-input-border.jpg"></h2>
+
+    2. Clicking or tapping on the *Send My Idea* button will initiate the HTML basic error checking.
+		- if no text is entered into the text boxes: 
+			- error message = *Please fill out this field.*
+
+            <h2 align="left"><img src="docs/testing/manual/email-input-error.jpg"></h2>
+
+        - if text is entered into all the text boxes
+
+            <h2 align="left"><img src="docs/testing/manual/email-details.jpg"></h2>
+
+            - inputs boxes will clear and return to showing the placeholder text
+            - Electric Blue text, *Idea submitted!* will be visible
+            - the *Send My Idea* button will be disabled and the fill colour will change from White to Grey
+
+            <h2 align="left"><img src="docs/testing/manual/email-sent.jpg"></h2>
+
+            - Email will be sent via **EmailJS** to the owner's Gmail account
+
+            <h2 align="left"><img src="docs/testing/manual/email-rx.jpg"></h2>
+
+* On the footer section
+
+    <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
+
+    1. Clicking or tapping the Lavender Floral GitHub *cat* icon will:
+		- take the user to the site owner's GitHub account in another tab
+
+    <h2 align="left"><img src="docs/testing/manual/janet-dev.jpg"></h2>
+
+
+#### 404 Page
+
+Desktop/tablet/mobile screens:
+
+<h2 align="left"><img src="docs/pictures/page-404.jpg"></h2>
+
+**Site View**
+
+On arriving at this page, the following features are visible to the user:
 
 
 ### W3C Validation
@@ -351,126 +483,24 @@ and a warning in JSHint
 
 ### Known Bugs
 
-See **Console Errors** section above. 
+#### Console Errors
 
+<h2 align="left"><img src="docs/testing/console/console.jpg"></h2>
 
-## Test Cases
+1 error, 1 warning and 1 possible improvement were detected.
 
-### Behavioural Driven Development
+* The error was removed by running the site on Chrome in Incognito mode.
+Stack Overflow user [Chrostip Schaejn](https://stackoverflow.com/questions/72494154/a-listener-indicated-an-asynchronous-response-by-returning-true-but-the-messag) advised that this error was cause by various Chrome extensions.
 
-Behavioural Driven Development (BDD) is manual testing and is based on the expected outcome of an action. No specific software tool is used and it is built upon the user stories. The application is tested to see if it behaves as expected. It is a descriptive way of testing. For example: 
+* The warning was also absent from Chrome in Incognito mode
+Stack Overflow user [Takash Futada](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) advised that "GitHub hosted pages disable FLoC, which is Google's 3rd party cookie alternative. GitHub, Microsoft, doesn't seems to like it."
 
-- as a user (role)
-- I want an email feature (feature)
-- so that I can contact the developer about my game idea (benefit)
+* The possible improvement was still present
+Google Forum user [Adrià Vilanova Martínez](https://support.google.com/chrome/thread/137261347/audit-usage-of-navigator-useragent-navigator-appversion-and-navigator-platform?hl=en) advised that "this only means that Chrome will provide less details about the user platform and Chrome version, since these are used by websites to fingerprint users."
 
-As a role, I want a particular feature, so that I get a benefit. BDD expands on this by adding **given, when, then**:
+<h2 align="left"><img src="docs/testing/console/incognito.jpg"></h2>
 
-- given a specific context: the user has filled in their details on the contact form
-- when an action is performed: user clicks 'Send Email' button
-- then there is an observable consequence: site owner receives an email from the user
-
-This behaviour is now testable and repeatable. Each test should only one thing at a time.
-
-These cases are included in order to help the next developer understand the design of the site and how to extend it. They document the look and functionality of each page.
-
-
-### Home Page
-
-Desktop/tablet/mobile screens:
-
-<h2 align="left"><img src="docs/pictures/home.jpg"></h2>
-
-**Site View**
-
-Colour palette used on a Black background:
-
-<h2 align="left"><img src="docs/ux/palette.jpg"></h2>
-
-On loading the site, the following features are visible to the user.
-
-* Game board with 
-    - name of the game title **Box Hunt** in Electric Blue
-    - initial values for **Score: 0** and **Time Left: 60s**. Words are in White and numbers in Persian Rose
-    - 3x3 Black game board with White grid lines
-    - active **Start** button (default HTML button without any extra styling)
-    - inactive **Reset** button (default greyed-out HTML button without any extra styling)
-
-<h2 align="left"><img src="docs/pictures/board.jpg"></h2>
-
-* Instructions of how to play the game and how points are accrued
-    - **Instructions** heading in Persian Rose
-    - list of instructions featuring an Electric Blue icon and White text
-
-<h2 align="left"><img src="docs/pictures/instructions.jpg"></h2>
-
-* Contact section where the user can email in a game idea, featuring:
-    - **Email Us** heading in Persian Rose
-    - name input box with **Full Name** placeholder text
-    - email address input box with **Email** placeholder text
-    - text area with **Game Idea** placeholder text
-    - **Send My Idea** button (default HTML button without any extra styling)
-
-<h2 align="left"><img src="docs/pictures/email.jpg"></h2>
-
-* Footer section with
-    - White text
-    - **heart** icon in Lavender Floral
-    - Lavender Floral **GitHub** icon with an active link (default HTML linking without any extra styling)
-
-<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
-
-
-**Site Actions**
-
-When the user selects an active area of the screen, the following results will be seen.
-
-* Game board - 
-<h2 align="left"><img src="docs/pictures/board.jpg"></h2>
-
-Playing the game
-<h2 align="left"><img src="docs/testing/manual/game-play.jpg"></h2>
-
-- 'Start' button to start play, and a greyed-out 'Reset' button. On clicking 'Start':
-	- it will become inactive and greyed-out
-	- the moving target will be generated
-	- the score increments if target is hit and the time left counts down
-	- the 'Reset' button will be active 
-- On clicking 'Reset':
-	- it will become inactive and greyed-out
-	- the score returns to 0 and the time left to 60 seconds
-	- the target disappears
-	- the 'Start' button will be active
-
-Game over
-<h2 align="left"><img src="docs/testing/manual/game-over.jpg"></h2>
-
-* Email - 
-<h2 align="left"><img src="docs/pictures/email.jpg"></h2>
-
-Entering details
-<h2 align="left"><img src="docs/testing/manual/email-details.jpg"></h2>
-
-Email sent
-<h2 align="left"><img src="docs/testing/manual/email-sent.jpg"></h2>
-
-Email received
-<h2 align="left"><img src="docs/testing/manual/email-rx.jpg"></h2>
-
-* Footer - 
-<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
-* Social media link for GitHub account accessed via the appropriate icon.
-
-#### 404 Page
-
-Desktop/tablet/mobile screens:
-
-<h2 align="left"><img src="docs/pictures/page-404.jpg"></h2>
-
-**Site View**
-
-On arriving at this page, the following features are visible to the user:
-
+Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js - EmailJS
 
 
 ## Credits
