@@ -242,8 +242,8 @@ When the user selects an active area of the screen, the following results will b
     1. Clicking or tapping on the *Start* button will
         - cause the *Time left* value to count down from 60 seconds
         - cause a randomly generated Electric Blue square target to appear, initially every 1 second 
-        - change the *Start* button fill colour from White to Grey
-        - change the *Reset* button fill colour from Grey to White
+        - disable the *Start* button and change the fill colour from White to Grey
+        - enable the *Reset* button and change the fill colour from Grey to White
 
     2. Clicking or tapping on the Electric Blue moving target will
         - cause the *Score* to increment
@@ -260,8 +260,8 @@ When the user selects an active area of the screen, the following results will b
         - remove the target if present
         - change the *Score* value to 0
         - change the *Time left* value to 60
-        - change the *Reset* button fill colour from White to Grey
-        - change the *Start* button fill colour from Grey to White
+        - disable the *Reset* button and change the fill colour from White to Grey
+        - enable the *Start* button and change the fill colour from Grey to White
         - remove the *Game Over!* text above the grid, if the *Time left* value is 0
 
     <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
@@ -299,7 +299,7 @@ When the user selects an active area of the screen, the following results will b
 
     <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
 
-    1. Clicking or tapping the Lavender Floral GitHub *cat* icon will:
+    1. Clicking or tapping the Lavender Floral *GitHub* icon will:
 		- take the user to the site owner's GitHub account in another tab
 
     <h2 align="left"><img src="docs/testing/manual/janet-dev.jpg"></h2>
