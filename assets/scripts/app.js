@@ -1,5 +1,7 @@
 // 2D Retro Game - Box Hunt
-// Some code sourced from 'Whac-A-Mole' game by Ania Kubow
+// Some code sourced from games by Ania Kubow
+// https://github.com/kubowania/whac-a-mole/blob/master/app.js
+// https://github.com/kubowania/candy-crush/blob/master/app.js
 
 // DOM event listener - all HTML elements to be read before loading JS file
 // makes sure events happen in order, because I 
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let countDownTimer;
 
     function createGrid() {
-        //Build your own CANDY CRUSH using JavaScript, HTML and CSS | Ania Kubow
+        //Code from 'Build your own CANDY CRUSH using JavaScript, HTML and CSS' by Ania Kubow
         // create the game grid
         for (let n = 0; n < game.numberOfTiles; n++) {
             // create the <div> tag for each tile
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function randomTarget() {
         // generate random target tile
         // get each tile (0-8) and remove the class .target
+        // code from 'Learn JavaScript by building 7 games: Whac-A-Mole' by Ania Kubow
         tiles.forEach(tile => {
             tile.classList.remove('target');
         });
@@ -59,23 +62,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function countDown() {
         // countdown timer and check if game is over
+        //some code from 'Learn JavaScript by building 7 games: Whac-A-Mole' by Ania Kubow
         game.timePeriod--;  //decrement
         timeLeft.textContent = game.timePeriod;
-
         if (game.timePeriod == 0) {
             clearInterval(countDownTimer);
             clearInterval(randomTargetTimer);
-            //end game
+
+            //end the game
             gameOver();
         }
     }
     
     function isTargetHit() {
         // check if random target has been clicked or touched
+        //some code from 'Learn JavaScript by building 7 games: Whac-A-Mole' by Ania Kubow
         tiles.forEach(tile => {
             tile.addEventListener('click', () => {
                 // 'click' for mouse click or touch on touchscreen
                 if (tile.id == hitPosition) {
+
                     clearInterval(randomTargetTimer); // clear repeat period
 
                     game.score++;
@@ -91,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function removeTarget() {
-        // remove event listener and ability to restart game by random clicking on grid
+        // remove event listener and ability to restart game by random clicking on grid 
         tiles.forEach(tile => {
             tile.classList.remove('target');
             hitPosition = null;
