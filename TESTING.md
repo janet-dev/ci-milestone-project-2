@@ -358,10 +358,10 @@ There is no active part of this page for user interaction. An automatic redirect
 
 index.html
 
-- [Desktop PDF report](docs/testing/lighthouse/lighthouse-index-desktop-2.pdf)
+- [Desktop PDF report](docs/testing/lighthouse/lighthouse-index-desktop.pdf)
 <h2 align="left"><img src="docs/testing/lighthouse/lighthouse-index-desktop.jpg"></h2>
 
-- [Mobile PDF report](docs/testing/lighthouse/lighthouse-index-mobile-2.pdf)
+- [Mobile PDF report](docs/testing/lighthouse/lighthouse-index-mobile.pdf)
 <h2 align="left"><img src="docs/testing/lighthouse/lighthouse-index-mobile.jpg"></h2>
 
 404.html
