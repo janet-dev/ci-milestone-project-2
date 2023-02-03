@@ -376,7 +376,9 @@ Github have published the procedure to [create a custom 404 page](https://docs.g
 
 <h2 align="left"><img src="docs/testing/lighthouse/lighthouse-404.jpg"></h2>
 
-- [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf) : Same score as for desktop
+- [Mobile PDF report](docs/testing/lighthouse/lighthouse-404-mobile.pdf)
+
+<h2 align="left"><img src="docs/testing/lighthouse/lighthouse-404-mobile.jpg"></h2>
 
 
 ### JSHint
