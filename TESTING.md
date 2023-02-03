@@ -281,6 +281,11 @@ When the user selects an active area of the screen, the following results will b
 
             <h2 align="left"><img src="docs/testing/manual/email-input-error.jpg"></h2>
 
+        - if certain characters are missing from the email address, for example the *@* symbol:
+            - error message = *Please include an '@' in the email address.*
+
+            <h2 align="left"><img src="docs/testing/manual/email-input-error-at.jpg"></h2>
+
         - if text is entered into all the text boxes
 
             <h2 align="left"><img src="docs/testing/manual/email-details.jpg"></h2>
@@ -479,6 +484,15 @@ and a warning in JSHint
 
 <h2 align="left"><img src="docs/testing/bugs/bug-06-solved.jpg"></h2>
 <h2 align="left"><img src="docs/testing/bugs/bug-06-solved2.jpg"></h2>
+
+7. No HTML validation for inputing email address on contact form
+
+<h2 align="left"><img src="docs/testing/bugs/bug-07-email.jpg"></h2>
+
+- Solved by changing input type from *text* to *email*, as this will use standard HTML validation for entering email addresses
+
+<h2 align="left"><img src="docs/testing/bugs/bug-07-solved.jpg"></h2>
+<h2 align="left"><img src="docs/testing/manual/email-input-error-at.jpg"></h2>
 
 
 ### Known Bugs
