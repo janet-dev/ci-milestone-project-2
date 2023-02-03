@@ -50,7 +50,7 @@ describe("grid has been built", () => {
 });
 
 describe("check initial HTML when Start button ONLY is clicked", () => {
-    //Use Jest write unit testing for DOM manipulation by Clark on Dev.to
+    // code from 'Use Jest write unit testing for DOM manipulation' by Clark on Dev.to
     test("should set score to 0 and time left to 60", () => {
         document.body.innerHTML = `
         <h2 class="full-width">Score: <span id="score">0</span> Time left: <span id="time-left">60</span>s</h2>
