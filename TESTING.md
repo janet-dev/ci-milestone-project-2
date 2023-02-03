@@ -81,7 +81,7 @@ Before running the tests, some modification is required to **index.html** and **
 
 #### Tests Generated
 
-It was decided to devise three tests:
+It was decided to devise three tests. These were important to ensure that the initial view of the game page was correct. On loading, the *Score* and *Time left* must be at the default values, but the third test also checks that when the *Start* button is clicked, any values are immediately forced back to the defaults. The second test is very important for the foundation of the game - the grid must have 9 tiles and each tile must have the correct assigned id. Because this grid was built using JavaScript, it was important to test that it had been created as expected. The extra failing test for the tenth square was used to double check. Sometimes it is too easy to write tests that will never fail.
 
 1. Check that the score and time-left, have the correct initial values on loading game and before the start of play. The elements of ids 'score' and 'time-left' are accessed and checked that their values, via text content, are '0' and '60' respectively.
 <h2 align="left"><img src="docs/testing/jest/jest-test-1.jpg"></h2>
@@ -275,7 +275,7 @@ When the user selects an active area of the screen, the following results will b
 
         <h2 align="left"><img src="docs/testing/manual/email-input-border.jpg"></h2>
 
-    2. Clicking or tapping on the *Send My Idea* button will initiate the HTML basic error checking.
+    2. Clicking or tapping on the *Send My Idea* button will initiate the HTML basic error checking:
 		- if no text is entered into the text boxes: 
 			- error message = *Please fill out this field.*
 
@@ -286,7 +286,7 @@ When the user selects an active area of the screen, the following results will b
 
             <h2 align="left"><img src="docs/testing/manual/email-input-error-at.jpg"></h2>
 
-        - if text is entered into all the text boxes
+        - if text is entered into all the text boxes with a valid email address:
 
             <h2 align="left"><img src="docs/testing/manual/email-details.jpg"></h2>
 
@@ -319,6 +319,18 @@ Desktop/tablet/mobile screens:
 **Site View**
 
 On arriving at this page, the following features are visible to the user:
+
+* Coloured background in Magenta, Cyan, Yellow and White
+
+* Black title *404*
+
+* Black text *Are you lost?* and *Returning home in 3 seconds!*
+
+**Site Actions**
+
+There is no active part of this page for user interaction. An automatic redirect will: 
+
+ - send the user, using same tab, to the home page at https://janet-dev.github.io/ci-milestone-project-2/ after 3 seconds 
 
 
 ### W3C Validation
