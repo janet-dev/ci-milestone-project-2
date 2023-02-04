@@ -61,13 +61,19 @@ function randomTarget() {
     // generate random target tile
     // get each tile (0-8) and remove the class .target
     // code from 'Learn JavaScript by building 7 games: Whac-A-Mole' by Ania Kubow
+    
     tiles.forEach(tile => {
-        tile.classList.remove('target');
+        tile.classList.remove('target'); // remove target before producing new one
     });
     let randomNumber = Math.floor(Math.random() * 9); //generate random target tile number 0-8
     let randomTile = tiles[randomNumber]; //generate random target tile
     randomTile.classList.add('target'); // assign target class
     hitPosition = randomTile.id; // assign potential hit position with tile and it's id
+}
+
+function clearTheIntervals() {
+    clearInterval(countDownTimer);
+    clearInterval(randomTargetTimer);
 }
 
 function countDown() {
@@ -76,11 +82,9 @@ function countDown() {
     period--;  //decrement
     timeLeft.textContent = period;
     if (period == 0) {
-        clearInterval(countDownTimer);
-        clearInterval(randomTargetTimer);
-
-        //end the game
-        gameOver();
+        clearTheIntervals();
+        
+        gameOver(); //end the game
     }
 }
 
@@ -121,8 +125,7 @@ function removeTarget() {
 function resetGame() {
     // reset game when Reset button is clicked/touched
     reset.onclick = () => {
-        clearInterval(countDownTimer);
-        clearInterval(randomTargetTimer);
+        clearTheIntervals();
         scoreDisplayed.textContent = 0;
         timeLeft.textContent = 60;
 
