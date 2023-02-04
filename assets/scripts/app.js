@@ -83,7 +83,19 @@ function countDown() {
         gameOver();
     }
 }
-    
+
+function onTileClicked() {
+    clearInterval(randomTargetTimer); // clear repeat period
+
+    score++;
+    scoreDisplayed.textContent = score;
+    hitPosition = null;
+
+    // speed up the moving target depending on score
+    randomTargetPeriod = GAME_CONFIG.startPeriod - (score * 50); //set the new repeat period
+    randomTargetTimer = setInterval(randomTarget, randomTargetPeriod); // run faster
+}
+
 function isTargetHit() {
     // check if random target has been clicked or touched
     //some code from 'Learn JavaScript by building 7 games: Whac-A-Mole' by Ania Kubow
@@ -91,16 +103,7 @@ function isTargetHit() {
         tile.addEventListener('click', () => {
             // 'click' for mouse click or touch on touchscreen
             if (tile.id == hitPosition) {
-
-                clearInterval(randomTargetTimer); // clear repeat period
-
-                score++;
-                scoreDisplayed.textContent = score;
-                hitPosition = null;
-
-                // speed up the moving target depending on score
-                randomTargetPeriod = GAME_CONFIG.startPeriod - (score * 50); //set the new repeat period
-                randomTargetTimer = setInterval(randomTarget, randomTargetPeriod); // run faster
+                onTileClicked();
             } // if you hit the coloured box
         });
     });
