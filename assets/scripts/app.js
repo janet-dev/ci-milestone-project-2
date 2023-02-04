@@ -30,9 +30,9 @@ let randomTargetTimer = GAME_CONFIG.startPeriod;
 let countDownTimer = GAME_CONFIG.countDownPeriod;
 
 function initialiseGame() {
-    // 'Start'/'Restart' buttons
+    // 'Start'/'Replay' buttons
     start.disabled = false; // 'Start' is enabled
-    reset.disabled = true; // 'Restart' is disabled
+    reset.disabled = true; // 'Replay' is disabled
 
     createGrid();
     tiles = document.querySelectorAll('.tile'); // select all elements with class .tile
