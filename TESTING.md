@@ -96,7 +96,7 @@ It was decided to devise three tests. These were important to ensure that the in
 
 <h2 align="left"><img src="docs/testing/jest/jest-test-3.jpg"></h2>
 
-The tests above give a flavour of how automated testing can be achieved. The test results are seen below:
+The tests above give a flavour of how automated testing can be achieved. The test results are seen below with a test coverage report:
 
 <h2 align="left"><img src="docs/testing/jest/jest-tests.jpg"></h2>
 
@@ -555,6 +555,10 @@ Although the code is the work of the author, some of the code has been sourced f
 [ARE YOU STRUGGLING WITH NULL VALUES IN JEST?](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1650618994260909) on Code Institute Slack Channel project-milestone-2 by Benjamin Kavanagh
 
 [Use Jest write unit testing for DOM manipulation](https://dev.to/ms314006/use-jest-write-unit-testing-for-dom-manipulation-3n6c) by Clark on Dev.to
+
+[How to get the code coverage report using Jest?](https://stackoverflow.com/questions/24825860/how-to-get-the-code-coverage-report-using-jest) - answer by ccalvert on Stack Overflow
+
+Jest CLI Options - [Using with npm scripts](https://jestjs.io/docs/cli#using-with-npm-scripts) by Jest Docs
 
 [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
 
