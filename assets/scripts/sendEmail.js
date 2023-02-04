@@ -1,5 +1,8 @@
-// EmailJS
-// Used code from Sending Emails Using EmailJS tutorial by Code Institute
+/**
+ * EmailJS
+ * Used code from Sending Emails Using EmailJS tutorial by Code Institute
+ * 
+ */
 
 const submitButton = document.querySelector('#submit-button');
 submitButton.disabled = false;
