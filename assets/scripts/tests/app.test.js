@@ -4,7 +4,7 @@
 
 // ARE YOU STRUGGLING WITH NULL VALUES IN JEST?
 // Code Institute Slack Channel project-milestone-2 by Benjamin Kavanagh
-let game; 
+let GAME_CONFIG; 
 let createGrid; 
 let startGame;
 
@@ -15,7 +15,7 @@ beforeAll(() => {
     document.open();
     document.write(fileContents);
     document.close();
-    game = require("../app");
+    GAME_CONFIG = require("../app");
     createGrid = require("../app");
     startGame = require("../app");
 });
@@ -56,7 +56,7 @@ describe("check initial HTML when Start button ONLY is clicked", () => {
         <h2 class="full-width">Score: <span id="score">0</span> Time left: <span id="time-left">60</span>s</h2>
         <div class="buttons-div">
             <button id="start-game">Start</button>
-            <button id="reset-game">Reset</button>
+            <button id="reset-game">Replay</button>
         </div>
         `;           
         const newScore = document.getElementById('score');
