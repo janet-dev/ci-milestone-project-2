@@ -73,7 +73,7 @@ Before running the tests, some modification is required to **index.html** and **
 
 - add the following line to bottom of app.js
 
-`module.exports = { game, createGrid, startGame };`
+`module.exports = { GAME_CONFIG, createGrid, startGame };`
 
 <h2 align="left"><img src="docs/testing/jest/prereq-app.jpg"></h2>
 
