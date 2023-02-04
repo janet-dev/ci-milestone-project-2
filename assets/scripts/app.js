@@ -39,9 +39,8 @@ function initialiseGame() {
     createGrid();
     tiles = document.querySelectorAll('.tile'); // select all elements with class .tile
 
-    //resetGame();
     reset.addEventListener('click', resetGame);
-    startGame();
+    start.addEventListener('click', startGame);
 }
 
 document.addEventListener('DOMContentLoaded', initialiseGame);
@@ -141,17 +140,15 @@ function resetGame() {
 
 function startGame() {
     // start game when Start button is clicked/touched
-    start.onclick = () => {
-        score = 0;
-        period = GAME_CONFIG.timePeriod;
-        start.disabled = true;
-        reset.disabled = false;
-        
-        countDownTimer = setInterval(countDown, GAME_CONFIG.countDownPeriod); // every 1 sec
-        randomTargetTimer = setInterval(randomTarget, GAME_CONFIG.startPeriod);
-        
-        isTargetHit(); // check if target is hit
-    };
+    score = 0;
+    period = GAME_CONFIG.timePeriod;
+    start.disabled = true;
+    reset.disabled = false;
+    
+    countDownTimer = setInterval(countDown, GAME_CONFIG.countDownPeriod); // every 1 sec
+    randomTargetTimer = setInterval(randomTarget, GAME_CONFIG.startPeriod);
+    
+    isTargetHit(); // check if target is hit
 }
 
 function gameOver() {    
