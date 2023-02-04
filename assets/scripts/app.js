@@ -39,7 +39,8 @@ function initialiseGame() {
     createGrid();
     tiles = document.querySelectorAll('.tile'); // select all elements with class .tile
 
-    resetGame();
+    //resetGame();
+    reset.addEventListener('click', resetGame);
     startGame();
 }
 
@@ -124,20 +125,18 @@ function removeTarget() {
    
 function resetGame() {
     // reset game when Reset button is clicked/touched
-    reset.onclick = () => {
-        clearTheIntervals();
-        scoreDisplayed.textContent = 0;
-        timeLeft.textContent = 60;
+    clearTheIntervals();
+    scoreDisplayed.textContent = 0;
+    timeLeft.textContent = 60;
 
-        removeTarget(); // remove coloured tile and deactivate clicking
+    removeTarget(); // remove coloured tile and deactivate clicking
 
-        // if the 'Game Over!' is displayed, remove it
-        const element = document.querySelector('#game-over');
-        element.textContent = "";
+    // if the 'Game Over!' is displayed, remove it
+    const element = document.querySelector('#game-over');
+    element.textContent = "";
 
-        start.disabled = false;
-        reset.disabled = true;
-    };
+    start.disabled = false;
+    reset.disabled = true;
 }
 
 function startGame() {
