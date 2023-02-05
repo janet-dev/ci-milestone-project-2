@@ -507,6 +507,34 @@ and a warning in JSHint
 <h2 align="left"><img src="docs/testing/bugs/bug-07-solved.jpg"></h2>
 <h2 align="left"><img src="docs/testing/manual/email-input-error-at.jpg"></h2>
 
+8. After code review with mentor, app.js was found to have nested functions
+
+<h2 align="left"><img src="docs/testing/bugs/bug-08-nested-funcs.jpg"></h2>
+
+- Solved by creating a initialiseGame() function for setting up the game prerequisites and creating the board, which runs when the *DOMContentLoaded* event is triggered
+
+<h2 align="left"><img src="docs/testing/bugs/bug-08-solved.jpg"></h2>
+
+9. Again sendEmail.js was found to have nested functions
+
+<h2 align="left"><img src="docs/testing/bugs/bug-09-nested-funcs.jpg"></h2>
+
+- Solved by creating two functions, onSuccess() and onError() which are called from the email,js.send() function
+
+<h2 align="left"><img src="docs/testing/bugs/bug-09-solved.jpg"></h2>
+
+10. Pressing "Reset" button did not immediately restart game play, as the "Start" button had to be pressed. This is not standard game play.
+
+<h2 align="left"><img src="docs/testing/bugs/bug-10-reset.jpg"></h2>
+
+- Solved by calling the startGame() function at the bottom of the resetGame() function. resetGame() is called when the "Replay" button is clicked.
+
+<h2 align="left"><img src="docs/testing/bugs/bug-10-solved2.jpg"></h2>
+
+- Also changed the "Reset" button to a "Restart" and amended the instructions
+
+<h2 align="left"><img src="docs/testing/bugs/bug-10-solved.jpg"></h2>
+
 
 ### Known Bugs
 
