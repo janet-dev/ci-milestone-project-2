@@ -436,9 +436,9 @@ The following browsers and devices were checked live and not through any emulato
 | Safari 16 | [iOS 16.2](docs/testing/manual/about-ios16.jpg) | [iPhone 8](docs/testing/manual/brows-iphon.png) | OK | [Yes](docs/testing/manual/email-iphone.jpg) | OK |
 | [Safari](docs/testing/manual/about-safar.png) | [macOS 15.15](docs/testing/manual/about-macos.png) | [MacBook Pro](docs/testing/manual/brows-macbk.png) | OK | [Yes](docs/testing/manual/email-macos.jpg) | OK |
 | [Brave](docs/testing/manual/about-brave.jpg) | [Windows 10](docs/testing/manual/about-win10.jpg) | [Dell Desktop](docs/testing/manual/brows-brave.jpg) | OK | [Yes](docs/testing/manual/email-brave.jpg) | OK |
-| [Chrome](docs/testing/manual/about-chrom.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-win10.jpg) | OK |
-| [Edge](docs/testing/manual/about-msedg.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-msedg.jpg) | OK |
-| [Opera](docs/testing/manual/about-opera.jpg) | Windows 10 | Dell Desktop | OK | [Yes](docs/testing/manual/email-opera.jpg) | OK |
+| [Chrome](docs/testing/manual/about-chrom.jpg) | Windows 10 | [Dell Desktop](docs/testing/manual/brows-chrom.jpg) | OK | [Yes](docs/testing/manual/email-win10.jpg) | OK |
+| [Edge](docs/testing/manual/about-msedg.jpg) | Windows 10 | [Dell Desktop](docs/testing/manual/brows-msedg.jpg) | OK | [Yes](docs/testing/manual/email-msedg.jpg) | OK |
+| [Opera](docs/testing/manual/about-opera.jpg) | Windows 10 | [Dell Desktop](docs/testing/manual/brows-opera.jpg) | OK | [Yes](docs/testing/manual/email-opera.jpg) | OK |
 
 
 ### Bugs
@@ -527,7 +527,8 @@ Google Forum user [Adrià Vilanova Martínez](https://support.google.com/chrome/
 
 <h2 align="left"><img src="docs/testing/console/incognito.jpg"></h2>
 
-Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js - EmailJS
+Now only 1 possible improvement is detected by Chrome in Incognito mode. Source is: 
+```https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js``` - EmailJS
 
 
 ## Credits
@@ -551,7 +552,7 @@ Although the code is the work of the author, some of the code has been sourced f
 
 [Jest](https://www.w3resource.com/jest/introduction.php) from w3resource
 
-[ARE YOU STRUGGLING WITH NULL VALUES IN JEST?](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1650618994260909) on Code Institute Slack Channel project-milestone-2 by Benjamin Kavanagh
+[ARE YOU STRUGGLING WITH NULL VALUES IN JEST?](docs/testing/jest/ci-mentor-jest.jpg) on Code Institute Slack Channel project-milestone-2 by Benjamin Kavanagh
 
 [Use Jest write unit testing for DOM manipulation](https://dev.to/ms314006/use-jest-write-unit-testing-for-dom-manipulation-3n6c) by Clark on Dev.to
 
@@ -559,6 +560,6 @@ Although the code is the work of the author, some of the code has been sourced f
 
 Jest CLI Options - [Using with npm scripts](https://jestjs.io/docs/cli#using-with-npm-scripts) by Jest Docs
 
-[aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+[aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) from MDN Web Docs 
 
-[Disallow aria-label misuse](https://html-validate.org/rules/aria-label-misuse.html)
+[Disallow aria-label misuse](https://html-validate.org/rules/aria-label-misuse.html) from HTML-validate by David Sveningsson
