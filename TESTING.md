@@ -205,7 +205,7 @@ On loading the site, the user will be taken to index.html, the home page. Mobile
     - initial values for *Score: 0* and *Time Left: 60s*. Words are in White and numbers in Persian Rose
     - 3x3 Black game board with White grid lines
     - active *Start* button (default HTML button without any extra styling)
-    - inactive *Reset* button (default greyed-out HTML button without any extra styling)
+    - inactive *Replay* button (default greyed-out HTML button without any extra styling)
 
 <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
 
@@ -243,7 +243,7 @@ When the user selects an active area of the screen, the following results will b
         - cause the *Time left* value to count down from 60 seconds
         - cause a randomly generated Electric Blue square target to appear, initially every 1 second 
         - disable the *Start* button and change the fill colour from White to Grey
-        - enable the *Reset* button and change the fill colour from Grey to White
+        - enable the *Replay* button and change the fill colour from Grey to White
 
     2. Clicking or tapping on the Electric Blue moving target will
         - cause the *Score* to increment
@@ -256,15 +256,14 @@ When the user selects an active area of the screen, the following results will b
 
     <h2 align="left"><img src="docs/testing/manual/game-over.jpg"></h2>
 
-    4. Clicking or tapping on the *Reset* button will
-        - remove the target if present
+    4. Clicking or tapping on the *Replay* button will
+        - remove the target
         - change the *Score* value to 0
         - change the *Time left* value to 60
-        - disable the *Reset* button and change the fill colour from White to Grey
-        - enable the *Start* button and change the fill colour from Grey to White
         - remove the *Game Over!* text above the grid, if the *Time left* value is 0
+        - immediately start the game again
 
-    <h2 align="left"><img src="docs/pictures/board.jpg"></h2>
+    <h2 align="left"><img src="docs/testing/manual/game-restart.jpg"></h2>
 
 * On the *Email Us* form section: 
 
