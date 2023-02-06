@@ -145,7 +145,7 @@ For this project it was only deemed necessary to use 2 breakpoints:
 
 ### Behavioural Driven Development
 
-Behavioural Driven Development (BDD) is manual testing and is based on the expected outcome of an action. No specific software tool is used and it is built upon the user stories. The application is tested to see if it behaves as expected. It is a descriptive way of testing. For example: 
+Behavioural Driven Development (BDD) is manual testing and is based on the expected outcome of an action. It is used to test the useability of the site and tests the areas that automated testing cannot. No specific software tool is used and it is built upon the user stories. The application is tested to see if it behaves as expected. It is a descriptive way of testing. For example: 
 
 - as a user (role)
 - I want an email feature (feature)
@@ -468,7 +468,7 @@ The following browsers and devices were checked live and not through any emulato
 
 <h2 align="left"><img src="docs/testing/bugs/bug-03-solved.jpg"></h2>
 
-4. During Jest testing, a non-failing console-error was seen inn the terminal
+4. During Jest testing, a non-failing console-error was seen in the terminal
 
 <h2 align="left"><img src="docs/testing/bugs/bug-04-jest.jpg"></h2>
 

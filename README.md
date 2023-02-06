@@ -63,7 +63,11 @@ As this is a brand new site with limited features, so the user stories were take
 
 - Why this game? This game was developed for anyone who just wanted a few moments of escapism or to get out of their current head-space. A minimalistic design with bright colours was developed to make it fun but not overly cluttered or busy. The game design lends it to be easily scaled up or down depending on the device screen size. This 60 second version is just short enough to play whilst waiting in a queue, or to pass between a group of players for some friendly competition.
 
-- View the game design flowchart [here](docs/ux/game-flowchart.pdf), to see how the functions are connected. These functions are:
+- View the game design flowchart to see how the functions are connected:
+
+<h2 align="left"><img src="docs/ux/game-flowchart.png"></h2>
+
+ These functions are:
 
 1. **initialiseGame()** - sets up the game before play and runs when the *DOMContentLoaded* event is triggered (once the basic HTML document is loaded):
 	- start button is enabled
@@ -205,19 +209,19 @@ After asking for advice from mentor, other gamers and developers, further featur
 
 * Instead of having a 'Start' and 'Replay' button, have only one button visible at a time. For example: have 'Start' only, visible on loading the game and after 'Start' is pressed, only have 'Replay' button visible. This will make the board much tidier.
 
-* show highest score attained so far by using **localStorage**
+* Show highest score attained so far by using **localStorage**.
 	- [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-* create an higher level where points are deducted when the user hits a black tile
+* Create an higher level where points are deducted when the user hits a black tile.
 
-* create higher levels where the number of tiles increases, for example:
+* Create higher levels where the number of tiles increases, for example:
 	- 4x4 grid = 16 tiles
 	- 5x5 grid = 25 tiles
 	- 6x6 grid = 36 tiles
 
-* make the game for 2 players, by generating 2 different coloured tiles with separate scoring
+* Make the game for 2 players, by generating 2 different coloured tiles with separate scoring.
 
-* develop an accessible level for those who require a larger game board with slower moving targets, by maximising the grid size for larger tablets and desktops
+* Develop an accessible level for those who require a larger game board with slower moving targets, by maximising the grid size for larger tablets and desktops.
 
 
 ## Technology Used
