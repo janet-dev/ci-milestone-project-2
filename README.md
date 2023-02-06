@@ -201,7 +201,10 @@ As this is a one-page site, there is an automatic redirect back to the home page
 
 ## Future Features
 
-After asking the advice of other gamers and developers, further features are required:
+After asking for advice from mentor, other gamers and developers, further features could be implemented:
+
+* Instead of having a 'Start' and 'Replay' button, have only one button visible at a time. For example: have 'Start' only, visible on loading the game and after 'Start' is pressed, only have 'Replay' button visible. This will make the board much tidier.
+
 * show highest score attained so far by using **localStorage**
 	- [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
@@ -237,6 +240,7 @@ After asking the advice of other gamers and developers, further features are req
 * Paint from [Microsoft](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)
 * Snip and Sketch from [Microsoft](https://apps.microsoft.com/store/detail/snipping-tool/9MZ95KL8MR0L?hl=en-gb&gl=gb)
 * PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
+* Flowchart by [Lucidchart](https://www.lucidchart.com/pages/)
 * Automated testing provided by [Jest](https://jestjs.io/).
 * HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
 * CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/).
